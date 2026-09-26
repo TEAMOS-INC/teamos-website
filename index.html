@@ -58,19 +58,17 @@
       gap: 24px;
     }
 
-    .brand {
-      font-size: 30px;
-      font-weight: 900;
-      letter-spacing: .04em;
-      color: #073a78;
-    }
+.brand {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
 
-    .brand small {
-      display: block;
-      font-size: 9px;
-      letter-spacing: .12em;
-      color: #64748b;
-    }
+.brand img {
+  width: 220px;
+  height: auto;
+  display: block;
+}
 
     .nav-links {
       display: flex;
@@ -401,12 +399,11 @@
 
 <header>
   <div class="container nav">
-
+    
     <a class="brand" href="#top">
-      TEAMOS
-      <small>PEOPLE × FORMATION × TECHNOLOGY</small>
+  <img src="assets/teamos-logo.png" alt="TEAMOS">
     </a>
-
+    
     <nav class="nav-links">
       <a href="#top">TOP</a>
       <a href="#services">事業紹介</a>
