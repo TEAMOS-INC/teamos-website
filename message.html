@@ -1,32 +1,1327 @@
-<!-- INFLUENCES -->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<div class="profile-influences">
+  <title>代表メッセージ｜TEAMOS</title>
 
-  <div class="profile-bio-label">
-    INFLUENCES
+  <meta
+    name="description"
+    content="株式会社TEAMOS代表取締役 南波泰昌のメッセージ。人とAIの力を掛け合わせ、最適なチーム設計を通じて組織と事業の可能性を解き放ちます。"
+  >
+
+  <style>
+    /* ==================================================
+       RESET
+    ================================================== */
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        "Noto Sans JP",
+        "Hiragino Kaku Gothic ProN",
+        "Yu Gothic",
+        Meiryo,
+        sans-serif;
+
+      color: #0b2c5f;
+      background: #ffffff;
+      line-height: 1.8;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(1180px, calc(100% - 48px));
+      margin: 0 auto;
+    }
+
+
+    /* ==================================================
+       COMMON
+    ================================================== */
+
+    .section-label {
+      color: #0879f9;
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+    }
+
+
+    /* ==================================================
+       HEADER
+    ================================================== */
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+
+      background: rgba(255,255,255,.96);
+      border-bottom: 1px solid #e8eef5;
+      backdrop-filter: blur(14px);
+    }
+
+    .nav {
+      min-height: 92px;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      gap: 36px;
+    }
+
+    .logo {
+      flex-shrink: 0;
+    }
+
+    .logo img {
+      width: 250px;
+      height: auto;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+
+      gap: 28px;
+
+      font-size: 14px;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+
+    .nav-links a {
+      transition: opacity .2s ease;
+    }
+
+    .nav-links a:hover {
+      opacity: .6;
+    }
+
+    .contact-btn {
+      padding: 15px 22px;
+
+      color: #ffffff !important;
+      background: #0879f9;
+
+      border-radius: 999px;
+    }
+
+
+    /* ==================================================
+       HERO
+    ================================================== */
+
+    .message-hero {
+      padding: 110px 0 90px;
+
+      background:
+        radial-gradient(
+          circle at 85% 10%,
+          rgba(8,121,249,.12),
+          transparent 28%
+        ),
+        linear-gradient(
+          180deg,
+          #f7fbff 0%,
+          #ffffff 100%
+        );
+
+      border-bottom: 1px solid #edf2f7;
+    }
+
+    .message-hero h1 {
+      margin-top: 12px;
+
+      color: #062b63;
+
+      font-size: clamp(42px, 5vw, 68px);
+      line-height: 1.2;
+      letter-spacing: -.03em;
+    }
+
+    .message-hero p {
+      max-width: 720px;
+
+      margin-top: 26px;
+
+      color: #52667d;
+
+      font-size: 17px;
+      line-height: 2;
+    }
+
+
+    /* ==================================================
+       MESSAGE
+    ================================================== */
+
+    .message-main {
+      padding: 100px 0 120px;
+    }
+
+    .message-grid {
+      display: grid;
+
+      grid-template-columns:
+        minmax(280px, .78fr)
+        minmax(0, 1.22fr);
+
+      gap: 72px;
+
+      align-items: start;
+    }
+
+
+    /* ==================================================
+       PROFILE
+    ================================================== */
+
+    .profile-column {
+      min-width: 0;
+    }
+
+    .profile-photo img {
+      width: 100%;
+      height: auto;
+
+      border-radius: 24px;
+
+      box-shadow:
+        0 20px 60px rgba(11,44,95,.12);
+    }
+
+    .profile-name {
+      margin-top: 24px;
+    }
+
+    .profile-name small {
+      display: block;
+
+      color: #0879f9;
+
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: .14em;
+    }
+
+    .profile-name h2 {
+      margin-top: 6px;
+
+      color: #0b2c5f;
+
+      font-size: 30px;
+      line-height: 1.4;
+    }
+
+    .profile-name p {
+      margin-top: 3px;
+
+      color: #52667d;
+
+      font-size: 14px;
+    }
+
+
+    /* ==================================================
+       PROFILE BIO
+    ================================================== */
+
+    .profile-bio {
+      margin-top: 36px;
+      padding-top: 28px;
+
+      border-top: 1px solid #dce6f0;
+    }
+
+    .profile-bio-label {
+      color: #0879f9;
+
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: .14em;
+    }
+
+    .profile-bio h3,
+    .profile-influences h3 {
+      margin-top: 4px;
+
+      color: #0b2c5f;
+
+      font-size: 22px;
+      line-height: 1.5;
+    }
+
+    .profile-bio-list {
+      margin-top: 22px;
+
+      list-style: none;
+    }
+
+    .profile-bio-item {
+      position: relative;
+
+      padding-left: 18px;
+      padding-bottom: 22px;
+    }
+
+    .profile-bio-item:last-child {
+      padding-bottom: 0;
+    }
+
+    .profile-bio-item::before {
+      content: "";
+
+      position: absolute;
+      left: 0;
+      top: 9px;
+
+      width: 6px;
+      height: 6px;
+
+      background: #0879f9;
+
+      border-radius: 50%;
+    }
+
+    .profile-bio-item strong {
+      display: block;
+
+      color: #0b2c5f;
+
+      font-size: 15px;
+      font-weight: 800;
+      line-height: 1.6;
+    }
+
+    .profile-bio-item p {
+      margin-top: 5px;
+
+      color: #52667d;
+
+      font-size: 13px;
+      line-height: 1.8;
+    }
+
+
+    /* ==================================================
+       INFLUENCES
+    ================================================== */
+
+    .profile-influences {
+      margin-top: 34px;
+      padding-top: 28px;
+
+      border-top: 1px solid #dce6f0;
+    }
+
+    .influence-list {
+      margin-top: 20px;
+    }
+
+    .influence-item {
+      display: grid;
+
+      grid-template-columns:
+        minmax(0, 1fr)
+        auto;
+
+      align-items: baseline;
+
+      gap: 18px;
+
+      padding: 13px 0;
+
+      border-bottom: 1px solid #edf2f7;
+    }
+
+    .influence-item:last-child {
+      border-bottom: none;
+    }
+
+    .influence-item strong {
+      color: #0b2c5f;
+
+      font-size: 15px;
+      font-weight: 800;
+      line-height: 1.6;
+    }
+
+    .influence-item span {
+      color: #64758a;
+
+      font-size: 12px;
+      white-space: nowrap;
+    }
+
+
+    /* ==================================================
+       MESSAGE COPY
+    ================================================== */
+
+    .message-copy {
+      min-width: 0;
+    }
+
+    .message-copy h2 {
+      margin-top: 12px;
+      margin-bottom: 42px;
+
+      color: #062b63;
+
+      font-size: clamp(34px, 4vw, 52px);
+      line-height: 1.45;
+      letter-spacing: -.03em;
+    }
+
+    .message-copy h3 {
+      margin-top: 54px;
+      margin-bottom: 22px;
+
+      color: #0b2c5f;
+
+      font-size: 26px;
+      line-height: 1.6;
+    }
+
+    .message-copy p {
+      margin-top: 20px;
+
+      color: #425a73;
+
+      font-size: 16px;
+      line-height: 2.05;
+    }
+
+    .message-highlight {
+      position: relative;
+
+      margin: 48px 0;
+
+      padding: 34px 38px;
+
+      overflow: hidden;
+
+      background:
+        linear-gradient(
+          135deg,
+          #062b63 0%,
+          #0879f9 100%
+        );
+
+      border-radius: 22px;
+
+      box-shadow:
+        0 18px 48px rgba(8,121,249,.18);
+    }
+
+    .message-highlight::after {
+      content: "";
+
+      position: absolute;
+      right: -80px;
+      top: -100px;
+
+      width: 260px;
+      height: 260px;
+
+      background: rgba(255,255,255,.08);
+
+      border-radius: 50%;
+    }
+
+    .message-highlight p {
+      position: relative;
+      z-index: 1;
+
+      margin: 0;
+
+      color: #ffffff;
+
+      font-size: 20px;
+      font-weight: 800;
+      line-height: 1.9;
+    }
+
+
+    /* ==================================================
+       CLOSING
+    ================================================== */
+
+    .closing {
+      padding: 100px 0;
+
+      background:
+        linear-gradient(
+          135deg,
+          #062b63 0%,
+          #0b3f85 60%,
+          #0879f9 100%
+        );
+
+      color: #ffffff;
+    }
+
+    .closing-inner {
+      max-width: 900px;
+    }
+
+    .closing .section-label {
+      color: #7fc0ff;
+    }
+
+    .closing h2 {
+      margin-top: 12px;
+
+      font-size: clamp(34px, 4.5vw, 54px);
+      line-height: 1.45;
+      letter-spacing: -.03em;
+    }
+
+    .closing p {
+      max-width: 760px;
+
+      margin-top: 28px;
+
+      color: rgba(255,255,255,.82);
+
+      font-size: 16px;
+      line-height: 2;
+    }
+
+    .closing-sign {
+      margin-top: 44px;
+
+      font-size: 14px;
+      line-height: 1.8;
+    }
+
+    .closing-sign strong {
+      display: block;
+
+      margin-top: 5px;
+
+      font-size: 22px;
+      letter-spacing: .04em;
+    }
+
+
+    /* ==================================================
+       CONTACT
+    ================================================== */
+
+    .contact {
+      padding: 100px 0;
+
+      text-align: center;
+
+      background: #f6f9fc;
+    }
+
+    .contact h2 {
+      color: #062b63;
+
+      font-size: clamp(30px, 4vw, 44px);
+    }
+
+    .contact p {
+      margin-top: 18px;
+
+      color: #52667d;
+
+      font-size: 16px;
+    }
+
+    .primary-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+
+      margin-top: 34px;
+
+      padding: 17px 30px;
+
+      color: #ffffff;
+      background: #0879f9;
+
+      border-radius: 999px;
+
+      font-size: 15px;
+      font-weight: 800;
+
+      box-shadow:
+        0 12px 30px rgba(8,121,249,.22);
+
+      transition:
+        transform .2s ease,
+        box-shadow .2s ease;
+    }
+
+    .primary-btn:hover {
+      transform: translateY(-2px);
+
+      box-shadow:
+        0 16px 36px rgba(8,121,249,.28);
+    }
+
+
+    /* ==================================================
+       FOOTER
+    ================================================== */
+
+    footer {
+      padding: 32px 0;
+
+      color: #718096;
+      background: #ffffff;
+
+      border-top: 1px solid #edf2f7;
+
+      text-align: center;
+
+      font-size: 12px;
+    }
+
+
+    /* ==================================================
+       TABLET
+    ================================================== */
+
+    @media (max-width: 980px) {
+
+      .logo img {
+        width: 210px;
+      }
+
+      .nav-links {
+        gap: 17px;
+
+        font-size: 12px;
+      }
+
+      .contact-btn {
+        padding: 12px 16px;
+      }
+
+      .message-grid {
+        grid-template-columns:
+          minmax(240px, .7fr)
+          minmax(0, 1.3fr);
+
+        gap: 48px;
+      }
+
+      .profile-name h2 {
+        font-size: 27px;
+      }
+
+      .profile-bio-item strong {
+        font-size: 14px;
+      }
+
+      .profile-bio-item p {
+        font-size: 12px;
+      }
+
+      .influence-item {
+        grid-template-columns: 1fr;
+
+        gap: 2px;
+      }
+
+      .influence-item span {
+        white-space: normal;
+      }
+    }
+
+
+    /* ==================================================
+       MOBILE
+    ================================================== */
+
+    @media (max-width: 850px) {
+
+      .container {
+        width: min(100% - 32px, 720px);
+      }
+
+      header {
+        position: static;
+      }
+
+      .nav {
+        min-height: 76px;
+      }
+
+      .logo img {
+        width: 190px;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      .message-hero {
+        padding: 72px 0 64px;
+      }
+
+      .message-hero p {
+        font-size: 15px;
+      }
+
+      .message-main {
+        padding: 72px 0 88px;
+      }
+
+      .message-grid {
+        grid-template-columns: 1fr;
+
+        gap: 64px;
+      }
+
+      .profile-column {
+        width: 100%;
+      }
+
+      .profile-photo {
+        max-width: 520px;
+
+        margin: 0 auto;
+      }
+
+      .profile-name {
+        max-width: 520px;
+
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .profile-bio {
+        max-width: 520px;
+
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .profile-influences {
+        max-width: 520px;
+
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .profile-bio-item p {
+        font-size: 14px;
+      }
+
+      .influence-item {
+        grid-template-columns:
+          minmax(0, 1fr)
+          auto;
+
+        gap: 18px;
+      }
+
+      .message-copy h2 {
+        margin-bottom: 34px;
+      }
+
+      .message-copy h3 {
+        margin-top: 46px;
+
+        font-size: 23px;
+      }
+
+      .message-copy p {
+        font-size: 16px;
+      }
+
+      .message-highlight {
+        padding: 28px 26px;
+      }
+
+      .message-highlight p {
+        font-size: 18px;
+      }
+
+      .closing {
+        padding: 75px 0;
+      }
+
+      .contact {
+        padding: 75px 0;
+      }
+    }
+
+
+    /* ==================================================
+       SMALL MOBILE
+    ================================================== */
+
+    @media (max-width: 520px) {
+
+      .message-hero h1 {
+        font-size: 38px;
+      }
+
+      .profile-name h2 {
+        font-size: 26px;
+      }
+
+      .profile-bio h3,
+      .profile-influences h3 {
+        font-size: 20px;
+      }
+
+      .influence-item {
+        grid-template-columns: 1fr;
+
+        gap: 1px;
+      }
+
+      .message-copy h2 {
+        font-size: 32px;
+      }
+
+      .message-copy h3 {
+        font-size: 21px;
+      }
+    }
+
+  </style>
+</head>
+
+
+<body>
+
+
+<!-- ==================================================
+     HEADER
+================================================== -->
+
+<header>
+
+  <div class="container nav">
+
+    <a
+      href="index.html#top"
+      class="logo"
+    >
+      <img
+        src="assets/teamos-logo.png"
+        alt="TEAMOS"
+      >
+    </a>
+
+
+    <nav class="nav-links">
+
+      <a href="index.html#top">
+        TOP
+      </a>
+
+      <a href="index.html#services">
+        事業紹介
+      </a>
+
+      <a href="mvv.html">
+        ミッション
+      </a>
+
+      <a href="company.html">
+        会社紹介
+      </a>
+
+      <a href="message.html">
+        代表挨拶
+      </a>
+
+      <a href="index.html#news">
+        ニュース
+      </a>
+
+      <a href="index.html#recruit">
+        採用情報
+      </a>
+
+      <a
+        href="index.html#contact"
+        class="contact-btn"
+      >
+        お問い合わせ →
+      </a>
+
+    </nav>
+
   </div>
 
-  <h3>
-    影響を受けた人物
-  </h3>
+</header>
 
-  <div class="influence-list">
 
-    <div class="influence-item">
-      <strong>孫 正義</strong>
-      <span>構想と挑戦</span>
+
+<main>
+
+
+<!-- ==================================================
+     HERO
+================================================== -->
+
+<section class="message-hero">
+
+  <div class="container">
+
+    <div class="section-label">
+      MESSAGE
     </div>
 
-    <div class="influence-item">
-      <strong>野村 克也</strong>
-      <span>組織と人材</span>
-    </div>
+    <h1>
+      代表メッセージ
+    </h1>
 
-    <div class="influence-item">
-      <strong>イビチャ・オシム</strong>
-      <span>戦術とチーム</span>
+    <p>
+      人とAIの力を掛け合わせ、
+      チームの可能性を最大限に引き出す。<br>
+      TEAMOSが目指す組織づくりと、
+      事業への想いをご紹介します。
+    </p>
+
+  </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     MESSAGE
+================================================== -->
+
+<section class="message-main">
+
+  <div class="container">
+
+    <div class="message-grid">
+
+
+      <!-- LEFT PROFILE -->
+
+      <aside class="profile-column">
+
+        <div class="profile-photo">
+
+          <img
+            src="assets/representative.jpg"
+            alt="株式会社TEAMOS 代表取締役 南波 泰昌"
+          >
+
+        </div>
+
+
+        <div class="profile-name">
+
+          <small>
+            REPRESENTATIVE DIRECTOR
+          </small>
+
+          <h2>
+            南波 泰昌
+          </h2>
+
+          <p>
+            Namba Hiromasa
+          </p>
+
+        </div>
+
+
+        <!-- PROFILE -->
+
+        <div class="profile-bio">
+
+          <div class="profile-bio-label">
+            PROFILE
+          </div>
+
+          <h3>
+            略歴
+          </h3>
+
+
+          <div class="profile-bio-list">
+
+            <div class="profile-bio-item">
+
+              <strong>
+                野村総合研究所（NRI）
+              </strong>
+
+              <p>
+                証券フロント・バックシステム、
+                共同利用型プラットフォームの開発に携わる。
+              </p>
+
+            </div>
+
+
+            <div class="profile-bio-item">
+
+              <strong>
+                ソフトバンク株式会社
+              </strong>
+
+              <p>
+                COO直轄組織にて事業開発、先端技術研究、
+                IoTコンサルティング事業にも携わる。
+              </p>
+
+            </div>
+
+
+            <div class="profile-bio-item">
+
+              <strong>
+                丸紅株式会社・社内ベンチャー
+              </strong>
+
+              <p>
+                蓄電池卸売ベンチャーの創業に携わり、
+                代表取締役社長を務める。
+              </p>
+
+            </div>
+
+
+            <div class="profile-bio-item">
+
+              <strong>
+                SES企業 取締役
+              </strong>
+
+              <p>
+                AI推進事業をけん引し、
+                AI時代の事業構造改革に従事。
+              </p>
+
+            </div>
+
+
+            <div class="profile-bio-item">
+
+              <strong>
+                株式会社TEAMOS
+              </strong>
+
+              <p>
+                チーム組成を軸に、
+                経営・組織コンサルティング事業を展開する
+                株式会社TEAMOSを創業。
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- INFLUENCES -->
+
+        <div class="profile-influences">
+
+          <div class="profile-bio-label">
+            INFLUENCES
+          </div>
+
+          <h3>
+            影響を受けた人物
+          </h3>
+
+
+          <div class="influence-list">
+
+            <div class="influence-item">
+
+              <strong>
+                孫 正義
+              </strong>
+
+              <span>
+                構想と挑戦
+              </span>
+
+            </div>
+
+
+            <div class="influence-item">
+
+              <strong>
+                野村 克也
+              </strong>
+
+              <span>
+                組織と人材
+              </span>
+
+            </div>
+
+
+            <div class="influence-item">
+
+              <strong>
+                イビチャ・オシム
+              </strong>
+
+              <span>
+                戦術とチーム
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </aside>
+
+
+
+      <!-- RIGHT MESSAGE -->
+
+      <div class="message-copy">
+
+        <div class="section-label">
+          MESSAGE
+        </div>
+
+        <h2>
+          組織の成長は、<br>
+          人の力だけではつくれない。
+        </h2>
+
+
+        <p>
+          これまで、IT、通信、事業開発、
+          スタートアップ経営、組織変革など、
+          さまざまな立場で事業に携わってきました。
+        </p>
+
+        <p>
+          その中で強く感じてきたのは、
+          優秀な人材が集まっているだけでは、
+          組織は必ずしも強くならないということです。
+        </p>
+
+        <p>
+          経営の方向性、事業戦略、組織構造、
+          権限、人材、テクノロジー。
+          これらがつながったとき、
+          チームは初めて大きな力を発揮します。
+        </p>
+
+
+        <div class="message-highlight">
+
+          <p>
+            TEAMOSは、
+            「最適なチーム設計」を通じて、
+            組織と事業の可能性を解き放つ会社です。
+          </p>
+
+        </div>
+
+
+        <h3>
+          AI時代だからこそ、<br>
+          チームの設計が重要になる。
+        </h3>
+
+        <p>
+          AIの進化によって、
+          一人ひとりが扱える情報量や、
+          生み出せる成果は大きく変わり始めています。
+        </p>
+
+        <p>
+          しかし、AIを導入するだけで
+          組織が変わるわけではありません。
+        </p>
+
+        <p>
+          人がどこで価値を発揮するのか。
+          AIに何を任せるのか。
+          誰が意思決定し、
+          どのようにチームとして動くのか。
+        </p>
+
+        <p>
+          これからの企業には、
+          人とAIを前提にした
+          新しい組織設計が必要だと考えています。
+        </p>
+
+
+        <h3>
+          戦略だけで終わらせない。
+        </h3>
+
+        <p>
+          TEAMOSが大切にしているのは、
+          戦略や構想を描くだけで終わらないことです。
+        </p>
+
+        <p>
+          現場に入り、
+          チームをつくり、
+          仕組みをつくり、
+          実際に動かしてみる。
+        </p>
+
+        <p>
+          そして、実行から得られた学びをもとに、
+          組織や事業をアップデートしていく。
+        </p>
+
+        <p>
+          経営と現場の間に立ち、
+          構想と実行をつなぐこと。
+          それが、TEAMOSの役割だと考えています。
+        </p>
+
+      </div>
+
+
     </div>
 
   </div>
 
-</div>
+</section>
+
+
+
+<!-- ==================================================
+     CLOSING
+================================================== -->
+
+<section class="closing">
+
+  <div class="container">
+
+    <div class="closing-inner">
+
+      <div class="section-label">
+        OUR PURPOSE
+      </div>
+
+      <h2>
+        人とAIのチカラで、<br>
+        組織の可能性を、解き放つ。
+      </h2>
+
+      <p>
+        企業には、まだ発揮されていない力があります。
+        人の可能性、チームの可能性、
+        そしてテクノロジーの可能性。
+      </p>
+
+      <p>
+        TEAMOSは、それらをつなぎ、
+        最適なチームをつくることで、
+        組織と事業の成長を支えていきます。
+      </p>
+
+
+      <div class="closing-sign">
+
+        株式会社TEAMOS<br>
+
+        <strong>
+          代表取締役　南波 泰昌
+        </strong>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     CONTACT
+================================================== -->
+
+<section class="contact">
+
+  <div class="container">
+
+    <div class="section-label">
+      CONTACT
+    </div>
+
+    <h2>
+      ご相談・お問い合わせ
+    </h2>
+
+    <p>
+      経営、組織、事業開発、AI活用など、<br>
+      お気軽にご相談ください。
+    </p>
+
+    <a
+      href="index.html#contact"
+      class="primary-btn"
+    >
+      お問い合わせ →
+    </a>
+
+  </div>
+
+</section>
+
+
+</main>
+
+
+
+<!-- ==================================================
+     FOOTER
+================================================== -->
+
+<footer>
+
+  <div class="container">
+    © 2027 TEAMOS Inc. All Rights Reserved.
+  </div>
+
+</footer>
+
+
+</body>
+</html>
