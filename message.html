@@ -63,11 +63,9 @@
 
     .section-label {
       color: #0879f9;
-
       font-size: 13px;
       font-weight: 900;
       letter-spacing: .16em;
-
       margin-bottom: 12px;
     }
 
@@ -166,7 +164,7 @@
 
 
     /* ==================================================
-       MESSAGE INTRO
+       MESSAGE
     ================================================== */
 
     .message-main {
@@ -175,19 +173,27 @@
 
     .message-grid {
       display: grid;
-      grid-template-columns: .85fr 1.15fr;
 
-      gap: 70px;
+      grid-template-columns:
+        minmax(280px, .78fr)
+        minmax(0, 1.22fr);
+
+      gap: 72px;
       align-items: start;
     }
 
-    .profile-photo {
-      position: sticky;
-      top: 120px;
+
+    /* ==================================================
+       LEFT PROFILE
+    ================================================== */
+
+    .profile-column {
+      min-width: 0;
     }
 
     .profile-photo img {
       width: 100%;
+      height: auto;
 
       border-radius: 24px;
 
@@ -204,7 +210,7 @@
 
       color: #0879f9;
 
-      font-size: 13px;
+      font-size: 12px;
       font-weight: 900;
       letter-spacing: .14em;
     }
@@ -217,14 +223,16 @@
     }
 
     .profile-name p {
-      margin-top: 6px;
+      margin-top: 3px;
 
       color: #52667d;
+
+      font-size: 14px;
     }
 
 
     /* ==================================================
-       PROFILE BIO
+       PROFILE / 略歴
     ================================================== */
 
     .profile-bio {
@@ -243,35 +251,35 @@
     }
 
     .profile-bio h3 {
-      margin-top: 5px;
+      margin-top: 4px;
 
       font-size: 22px;
       line-height: 1.5;
     }
 
     .profile-bio-list {
-      margin-top: 20px;
+      margin-top: 22px;
 
       list-style: none;
     }
 
-    .profile-bio-list li {
+    .profile-bio-item {
       position: relative;
 
-      padding: 0 0 18px 18px;
-
-      color: #52667d;
-
-      font-size: 14px;
-      line-height: 1.8;
+      padding-left: 18px;
+      padding-bottom: 22px;
     }
 
-    .profile-bio-list li::before {
+    .profile-bio-item:last-child {
+      padding-bottom: 0;
+    }
+
+    .profile-bio-item::before {
       content: "";
 
       position: absolute;
       left: 0;
-      top: .75em;
+      top: 9px;
 
       width: 6px;
       height: 6px;
@@ -281,19 +289,33 @@
       background: #0879f9;
     }
 
-    .profile-bio-list strong {
+    .profile-bio-item strong {
       display: block;
 
       color: #0b2c5f;
 
       font-size: 15px;
       font-weight: 800;
+      line-height: 1.6;
+    }
+
+    .profile-bio-item p {
+      margin-top: 5px;
+
+      color: #52667d;
+
+      font-size: 13px;
+      line-height: 1.8;
     }
 
 
     /* ==================================================
-       MESSAGE COPY
+       RIGHT MESSAGE COPY
     ================================================== */
+
+    .message-copy {
+      min-width: 0;
+    }
 
     .message-copy h2 {
       font-size: clamp(34px, 4vw, 48px);
@@ -348,6 +370,8 @@
       padding: 100px 0;
 
       text-align: center;
+
+      background: #f5f9ff;
     }
 
     .closing h2 {
@@ -423,6 +447,34 @@
 
 
     /* ==================================================
+       TABLET
+    ================================================== */
+
+    @media(max-width: 980px) {
+
+      .message-grid {
+        grid-template-columns:
+          minmax(240px, .7fr)
+          minmax(0, 1.3fr);
+
+        gap: 48px;
+      }
+
+      .profile-name h2 {
+        font-size: 27px;
+      }
+
+      .profile-bio-item strong {
+        font-size: 14px;
+      }
+
+      .profile-bio-item p {
+        font-size: 12px;
+      }
+    }
+
+
+    /* ==================================================
        MOBILE
     ================================================== */
 
@@ -440,6 +492,10 @@
         padding: 75px 0 60px;
       }
 
+      .message-hero p {
+        font-size: 16px;
+      }
+
       .message-main {
         padding: 75px 0;
       }
@@ -447,34 +503,48 @@
       .message-grid {
         grid-template-columns: 1fr;
 
-        gap: 48px;
+        gap: 64px;
       }
 
-      .profile-photo {
-        position: static;
+      .profile-column {
+        width: 100%;
       }
 
       .profile-photo img {
+        width: 100%;
         max-width: 520px;
+
         margin: 0 auto;
       }
 
       .profile-name {
+        width: 100%;
         max-width: 520px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 24px;
+
+        margin: 24px auto 0;
       }
 
       .profile-bio {
+        width: 100%;
         max-width: 520px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 36px;
+
+        margin: 36px auto 0;
+      }
+
+      .profile-bio-item p {
+        font-size: 14px;
+      }
+
+      .message-copy h2 {
+        font-size: 34px;
       }
 
       .message-copy p {
         font-size: 16px;
+      }
+
+      .message-highlight {
+        padding: 26px;
       }
 
       .message-highlight p {
@@ -483,6 +553,38 @@
 
       .closing {
         padding: 75px 0;
+      }
+    }
+
+
+    /* ==================================================
+       SMALL MOBILE
+    ================================================== */
+
+    @media(max-width: 520px) {
+
+      .container {
+        width: min(92%, 1100px);
+      }
+
+      .message-hero h1 {
+        font-size: 38px;
+      }
+
+      .message-copy h2 {
+        font-size: 30px;
+      }
+
+      .message-copy h3 {
+        font-size: 22px;
+      }
+
+      .profile-photo img {
+        border-radius: 18px;
+      }
+
+      .contact h2 {
+        font-size: 30px;
       }
     }
 
@@ -600,9 +702,14 @@
     <div class="message-grid">
 
 
-      <!-- LEFT PROFILE -->
+      <!-- ==================================================
+           LEFT : PROFILE
+      ================================================== -->
 
-      <div>
+      <aside class="profile-column">
+
+
+        <!-- PHOTO -->
 
         <div class="profile-photo">
 
@@ -611,79 +718,128 @@
             alt="株式会社TEAMOS 代表取締役 南波 泰昌"
           >
 
-          <div class="profile-name">
+        </div>
 
-            <small>
-              REPRESENTATIVE DIRECTOR
-            </small>
 
-            <h2>
-              南波 泰昌
-            </h2>
+        <!-- NAME -->
 
-            <p>
-              Namba Hiromasa
-            </p>
+        <div class="profile-name">
 
+          <small>
+            REPRESENTATIVE DIRECTOR
+          </small>
+
+          <h2>
+            南波 泰昌
+          </h2>
+
+          <p>
+            Namba Hiromasa
+          </p>
+
+        </div>
+
+
+        <!-- BIO -->
+
+        <div class="profile-bio">
+
+          <div class="profile-bio-label">
+            PROFILE
           </div>
 
+          <h3>
+            略歴
+          </h3>
 
-          <!-- PROFILE BIO -->
 
-          <div class="profile-bio">
+          <div class="profile-bio-list">
 
-            <div class="profile-bio-label">
-              PROFILE
-            </div>
 
-            <h3>
-              略歴
-            </h3>
+            <div class="profile-bio-item">
 
-            <ul class="profile-bio-list">
+              <strong>
+                野村総合研究所（NRI）
+              </strong>
 
-              <li>
-                <strong>野村総合研究所（NRI）</strong>
+              <p>
                 証券フロント・バックシステム、
                 共同利用型プラットフォームの開発に携わる。
-              </li>
+              </p>
 
-              <li>
-                <strong>ソフトバンク株式会社</strong>
+            </div>
+
+
+            <div class="profile-bio-item">
+
+              <strong>
+                ソフトバンク株式会社
+              </strong>
+
+              <p>
                 COO直轄組織にて事業開発、
                 先端技術研究、
                 IoTコンサルティング事業にも携わる。
-              </li>
+              </p>
 
-              <li>
-                <strong>丸紅株式会社・社内ベンチャー</strong>
+            </div>
+
+
+            <div class="profile-bio-item">
+
+              <strong>
+                丸紅株式会社・社内ベンチャー
+              </strong>
+
+              <p>
                 蓄電池卸売ベンチャーの創業に携わり、
                 代表取締役社長を務める。
-              </li>
+              </p>
 
-              <li>
-                <strong>SES企業 取締役</strong>
+            </div>
+
+
+            <div class="profile-bio-item">
+
+              <strong>
+                SES企業 取締役
+              </strong>
+
+              <p>
                 AI推進事業をけん引し、
                 AI時代の事業構造改革に従事。
-              </li>
+              </p>
 
-              <li>
-                <strong>株式会社TEAMOS</strong>
+            </div>
+
+
+            <div class="profile-bio-item">
+
+              <strong>
+                株式会社TEAMOS
+              </strong>
+
+              <p>
                 チーム組成を軸に、
                 経営・組織コンサルティング事業を展開する
                 株式会社TEAMOSを創業。
-              </li>
+              </p>
 
-            </ul>
+            </div>
+
 
           </div>
 
         </div>
 
-      </div>
+
+      </aside>
 
 
-      <!-- RIGHT MESSAGE -->
+
+      <!-- ==================================================
+           RIGHT : MESSAGE
+      ================================================== -->
 
       <div class="message-copy">
 
@@ -729,7 +885,7 @@
 
 
         <h3>
-          AI時代だからこそ、
+          AI時代だからこそ、<br>
           チームの設計が重要になる。
         </h3>
 
@@ -784,6 +940,7 @@
           変革を実行までつなげることが、
           TEAMOSの役割です。
         </p>
+
 
       </div>
 
