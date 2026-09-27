@@ -151,24 +151,22 @@
     ================================================== */
 
     .hero {
-      min-height: 620px;
+  min-height: 620px;
+  position: relative;
+  display: flex;
+  align-items: center;
 
-      position: relative;
-
-      display: flex;
-      align-items: center;
-
-      background:
-        linear-gradient(
-          90deg,
-          rgba(255,255,255,.98) 0%,
-          rgba(255,255,255,.94) 34%,
-          rgba(255,255,255,.60) 54%,
-          rgba(255,255,255,.08) 78%
-        ),
-        url("assets/hero.png") right center / auto 100% no-repeat;
-    }
-
+  background:
+    linear-gradient(
+      90deg,
+      rgba(255,255,255,.98) 0%,
+      rgba(255,255,255,.92) 32%,
+      rgba(255,255,255,.55) 48%,
+      rgba(255,255,255,.10) 62%,
+      rgba(255,255,255,0) 72%
+    ),
+    url("assets/hero.png") right center / auto 100% no-repeat;
+}
     .hero-content {
       width: min(680px, 58%);
       padding: 100px 0;
