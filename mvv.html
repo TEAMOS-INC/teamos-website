@@ -1,110 +1,656 @@
-<!-- ===== CONCEPT ===== -->
-<section class="concept-section">
-  <div class="concept-inner">
+<!DOCTYPE html>
+<html lang="ja">
 
-    <div class="concept-company-logo">
-      <img src="/teamos-website/assets/images/logo.png" alt="TEAMOS">
-    </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <p class="concept-label">CONCEPT</p>
+  <title>ミッション | TEAMOS</title>
 
-    <h1 class="concept-title">
-      TEAMOS = TEAM × OS
-    </h1>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-    <p class="concept-description">
-      TEAMOS（ティーモス）は、「TEAM」と「OS」を掛け合わせた名前です。<br>
-      我々は、チームという組織の最小単位が持つ力を、AI時代に合わせてアップデートして参ります。
-    </p>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        "Noto Sans JP",
+        "Yu Gothic",
+        sans-serif;
+      color: #0b2c5f;
+      background: #ffffff;
+      line-height: 1.8;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    .container {
+      width: min(1180px, 92%);
+      margin: 0 auto;
+    }
+
+    /* HEADER */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(255,255,255,.96);
+      border-bottom: 1px solid #e5eaf0;
+      backdrop-filter: blur(8px);
+    }
+
+    .nav {
+      min-height: 86px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 28px;
+    }
+
+    .logo img {
+      width: 220px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      font-size: 14px;
+      font-weight: 800;
+    }
+
+    .nav-links a:hover {
+      color: #0879f9;
+    }
+
+    .contact-btn {
+      padding: 12px 22px;
+      border-radius: 999px;
+      background: #0879f9;
+      color: #ffffff !important;
+    }
+
+    /* CONCEPT */
+    .concept-section {
+      padding: 90px 24px 110px;
+      text-align: center;
+      background:
+        radial-gradient(
+          circle at 50% 0%,
+          rgba(30,130,255,.14) 0%,
+          rgba(30,130,255,.05) 28%,
+          rgba(255,255,255,0) 58%
+        ),
+        #ffffff;
+    }
+
+    .concept-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* 正しいロゴパス */
+    .concept-company-logo {
+      margin-bottom: 42px;
+    }
+
+    .concept-company-logo img {
+      display: block;
+      width: 250px;
+      max-width: 60vw;
+      height: auto;
+      margin: 0 auto;
+    }
+
+    .concept-label {
+      margin: 0 0 34px;
+      color: #0879f9;
+      font-size: 15px;
+      font-weight: 900;
+      letter-spacing: .16em;
+    }
+
+    .concept-title {
+      margin: 0;
+      color: #0b2c5f;
+      font-size: clamp(48px, 5.2vw, 76px);
+      line-height: 1.15;
+      font-weight: 800;
+      letter-spacing: -.035em;
+    }
+
+    .concept-description {
+      max-width: 900px;
+      margin: 48px auto 0;
+      color: #52667d;
+      font-size: 18px;
+      line-height: 2.2;
+    }
+
+    /* MVV VISUAL */
+    .mvv-visual {
+      padding: 0 24px 100px;
+    }
+
+    .mvv-visual-inner {
+      max-width: 1400px;
+      margin: 0 auto;
+      overflow: hidden;
+      border-radius: 28px;
+      box-shadow: 0 14px 45px rgba(20,70,120,.07);
+    }
+
+    .mvv-visual img {
+      width: 100%;
+      height: auto;
+    }
+
+    /* MVV CONTENT */
+    .mvv-section {
+      padding: 105px 24px;
+      text-align: center;
+    }
+
+    .mvv-section.alt {
+      background: #f5f9ff;
+    }
+
+    .mvv-inner {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .section-label {
+      color: #0879f9;
+      font-size: 13px;
+      font-weight: 900;
+      letter-spacing: .16em;
+      margin-bottom: 18px;
+    }
+
+    .mvv-section h2 {
+      font-size: clamp(36px, 4.5vw, 56px);
+      line-height: 1.4;
+      letter-spacing: -.035em;
+    }
+
+    .mvv-section p {
+      max-width: 760px;
+      margin: 28px auto 0;
+      color: #52667d;
+      font-size: 17px;
+      line-height: 2;
+    }
+
+    /* VALUE */
+    .value-grid {
+      max-width: 1180px;
+      margin: 60px auto 0;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 22px;
+    }
+
+    .value-card {
+      padding: 34px 26px;
+      text-align: left;
+      border: 1px solid #dce7f3;
+      border-radius: 20px;
+      background: #ffffff;
+      box-shadow: 0 8px 30px rgba(20,70,120,.05);
+    }
+
+    .value-no {
+      color: #0879f9;
+      font-size: 28px;
+      font-weight: 900;
+    }
+
+    .value-card h3 {
+      margin-top: 18px;
+      font-size: 21px;
+      line-height: 1.5;
+    }
+
+    /* APPROACH */
+    .approach-section {
+      padding: 105px 24px;
+      text-align: center;
+      background: #f5f9ff;
+    }
+
+    .approach-inner {
+      max-width: 1180px;
+      margin: 0 auto;
+    }
+
+    .approach-section h2 {
+      font-size: clamp(36px, 4.5vw, 52px);
+      line-height: 1.4;
+    }
+
+    .approach-lead {
+      max-width: 760px;
+      margin: 26px auto 0;
+      color: #52667d;
+      font-size: 17px;
+      line-height: 2;
+    }
+
+    .approach-grid {
+      margin-top: 60px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 22px;
+    }
+
+    .approach-card {
+      padding: 34px 26px;
+      text-align: left;
+      border-radius: 20px;
+      background: #ffffff;
+      box-shadow: 0 8px 30px rgba(20,70,120,.05);
+    }
+
+    .approach-no {
+      color: #0879f9;
+      font-size: 28px;
+      font-weight: 900;
+    }
+
+    .approach-card h3 {
+      margin-top: 18px;
+      font-size: 21px;
+    }
+
+    .approach-card p {
+      margin-top: 14px;
+      color: #52667d;
+      font-size: 15px;
+    }
+
+    /* CONTACT */
+    .contact {
+      padding: 95px 24px;
+      text-align: center;
+      background: #062f66;
+      color: #ffffff;
+    }
+
+    .contact h2 {
+      font-size: clamp(32px, 4vw, 46px);
+    }
+
+    .contact p {
+      margin-top: 14px;
+      color: #c7d8ea;
+    }
+
+    .contact-button {
+      display: inline-block;
+      margin-top: 28px;
+      padding: 15px 30px;
+      border-radius: 999px;
+      background: #ffffff;
+      color: #062f66;
+      font-weight: 900;
+    }
+
+    /* FOOTER */
+    footer {
+      padding: 32px 20px;
+      text-align: center;
+      background: #031a3b;
+      color: #a9bdd4;
+      font-size: 13px;
+    }
+
+    /* MOBILE */
+    @media(max-width: 850px) {
+
+      .nav {
+        min-height: 72px;
+      }
+
+      .logo img {
+        width: 170px;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      .concept-section {
+        padding: 60px 20px 75px;
+      }
+
+      .concept-company-logo {
+        margin-bottom: 30px;
+      }
+
+      .concept-company-logo img {
+        width: 190px;
+      }
+
+      .concept-label {
+        margin-bottom: 22px;
+        font-size: 12px;
+      }
+
+      .concept-title {
+        font-size: clamp(34px, 10vw, 46px);
+      }
+
+      .concept-description {
+        margin-top: 30px;
+        font-size: 15px;
+        line-height: 2;
+      }
+
+      .concept-description br {
+        display: none;
+      }
+
+      .mvv-visual {
+        padding: 0 14px 70px;
+      }
+
+      .mvv-visual-inner {
+        border-radius: 16px;
+      }
+
+      .mvv-section,
+      .approach-section {
+        padding: 72px 20px;
+      }
+
+      .value-grid,
+      .approach-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        margin-top: 42px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="container nav">
+
+    <a href="index.html#top" class="logo">
+      <img
+        src="assets/teamos-logo.png"
+        alt="TEAMOS"
+      >
+    </a>
+
+    <nav class="nav-links">
+      <a href="index.html#top">TOP</a>
+      <a href="index.html#services">事業紹介</a>
+      <a href="mvv.html">ミッション</a>
+      <a href="company.html">会社紹介</a>
+      <a href="message.html">代表挨拶</a>
+      <a href="index.html#news">ニュース</a>
+      <a href="recruit.html">採用情報</a>
+      <a
+        href="index.html#contact"
+        class="contact-btn"
+      >
+        お問い合わせ →
+      </a>
+    </nav>
 
   </div>
-</section>
+</header>
 
-<style>
-.concept-section {
-  padding: 90px 24px 120px;
-  text-align: center;
-  background:
-    radial-gradient(
-      circle at 50% 0%,
-      rgba(30, 130, 255, 0.14) 0%,
-      rgba(30, 130, 255, 0.05) 28%,
-      rgba(255, 255, 255, 0) 58%
-    ),
-    #fff;
-}
 
-.concept-inner {
-  max-width: 1200px;
-  margin: 0 auto;
-}
+<main>
 
-.concept-company-logo {
-  margin-bottom: 40px;
-}
+  <!-- CONCEPT -->
+  <section class="concept-section">
 
-.concept-company-logo img {
-  display: block;
-  width: 220px;
-  max-width: 55vw;
-  height: auto;
-  margin: 0 auto;
-}
+    <div class="concept-inner">
 
-.concept-label {
-  margin: 0 0 34px;
-  color: #0878f9;
-  font-size: 16px;
-  font-weight: 800;
-  letter-spacing: .16em;
-}
+      <!-- 会社ロゴ -->
+      <div class="concept-company-logo">
+        <img
+          src="assets/teamos-logo.png"
+          alt="TEAMOS"
+        >
+      </div>
 
-.concept-title {
-  margin: 0;
-  color: #07316b;
-  font-size: clamp(48px, 5.2vw, 82px);
-  line-height: 1.1;
-  font-weight: 800;
-  letter-spacing: -.035em;
-}
+      <div class="concept-label">
+        CONCEPT
+      </div>
 
-.concept-description {
-  margin: 48px auto 0;
-  color: #526985;
-  font-size: 20px;
-  line-height: 2.25;
-}
+      <h1 class="concept-title">
+        TEAMOS = TEAM × OS
+      </h1>
 
-@media (max-width: 768px) {
-  .concept-section {
-    padding: 65px 20px 80px;
-  }
+      <p class="concept-description">
+        TEAMOS（ティーモス）は、「TEAM」と「OS」を掛け合わせた名前です。<br>
+        我々は、チームという組織の最小単位が持つ力を、
+        AI時代に合わせてアップデートして参ります。
+      </p>
 
-  .concept-company-logo {
-    margin-bottom: 28px;
-  }
+    </div>
 
-  .concept-company-logo img {
-    width: 175px;
-  }
+  </section>
 
-  .concept-label {
-    margin-bottom: 22px;
-    font-size: 13px;
-  }
 
-  .concept-title {
-    font-size: clamp(34px, 10vw, 48px);
-  }
+  <!-- MVV VISUAL -->
+  <section class="mvv-visual">
 
-  .concept-description {
-    margin-top: 30px;
-    font-size: 15px;
-    line-height: 2;
-  }
+    <div class="mvv-visual-inner">
 
-  .concept-description br {
-    display: none;
-  }
-}
-</style>
+      <img
+        src="assets/teamos-mvv.png"
+        alt="TEAMOS Mission Vision Value"
+      >
+
+    </div>
+
+  </section>
+
+
+  <!-- MISSION -->
+  <section class="mvv-section">
+
+    <div class="mvv-inner">
+
+      <div class="section-label">
+        MISSION
+      </div>
+
+      <h2>
+        人とAIのチカラで、<br>
+        組織の可能性を、解き放つ。
+      </h2>
+
+      <p>
+        人だけでも、AIだけでもない。
+        それぞれの強みを掛け合わせ、
+        組織が持つ可能性を最大限に引き出します。
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- VISION -->
+  <section class="mvv-section alt">
+
+    <div class="mvv-inner">
+
+      <div class="section-label">
+        VISION
+      </div>
+
+      <h2>
+        最適なチーム設計で、<br>
+        持続的に成長できる事業環境をつくる。
+      </h2>
+
+      <p>
+        戦略・組織・人材・テクノロジーを分断せず、
+        事業の成長に合わせて最適なチームを設計します。
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- VALUE -->
+  <section class="mvv-section">
+
+    <div class="mvv-inner">
+
+      <div class="section-label">
+        VALUE
+      </div>
+
+      <h2>
+        TEAMOSが大切にすること。
+      </h2>
+
+    </div>
+
+    <div class="value-grid">
+
+      <article class="value-card">
+        <div class="value-no">01</div>
+        <h3>構造と軌道から考える</h3>
+      </article>
+
+      <article class="value-card">
+        <div class="value-no">02</div>
+        <h3>個とAIを掛け合わせる</h3>
+      </article>
+
+      <article class="value-card">
+        <div class="value-no">03</div>
+        <h3>越境する</h3>
+      </article>
+
+      <article class="value-card">
+        <div class="value-no">04</div>
+        <h3>実行までやる</h3>
+      </article>
+
+    </div>
+
+  </section>
+
+
+  <!-- OUR APPROACH -->
+  <section class="approach-section">
+
+    <div class="approach-inner">
+
+      <div class="section-label">
+        OUR APPROACH
+      </div>
+
+      <h2>
+        変革を、実行までつなげる。
+      </h2>
+
+      <p class="approach-lead">
+        TEAMOSは、構想を描いて終わるのではなく、
+        現場と共に実行し、
+        変化を定着させるところまで伴走します。
+      </p>
+
+      <div class="approach-grid">
+
+        <article class="approach-card">
+          <div class="approach-no">01</div>
+          <h3>現状を知る</h3>
+          <p>
+            経営・事業・組織の現在地を整理します。
+          </p>
+        </article>
+
+        <article class="approach-card">
+          <div class="approach-no">02</div>
+          <h3>設計する</h3>
+          <p>
+            戦略と組織のあるべき姿を設計します。
+          </p>
+        </article>
+
+        <article class="approach-card">
+          <div class="approach-no">03</div>
+          <h3>共に実行する</h3>
+          <p>
+            現場と一緒に変革を前に進めます。
+          </p>
+        </article>
+
+        <article class="approach-card">
+          <div class="approach-no">04</div>
+          <h3>成長を進化させる</h3>
+          <p>
+            実行から学び、
+            組織と仕組みを更新します。
+          </p>
+        </article>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+
+    <h2>
+      ご相談・お問い合わせ
+    </h2>
+
+    <p>
+      経営・組織・事業開発・AI活用について、
+      お気軽にご相談ください。
+    </p>
+
+    <a
+      href="index.html#contact"
+      class="contact-button"
+    >
+      お問い合わせ →
+    </a>
+
+  </section>
+
+</main>
+
+
+<footer>
+  © 2027 TEAMOS Inc. All Rights Reserved.
+</footer>
+
+</body>
+</html>
