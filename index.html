@@ -109,7 +109,9 @@
     }
 
 
-    /* HEADER */
+    /* ==================================================
+       HEADER
+    ================================================== */
 
     header {
       position: sticky;
@@ -152,7 +154,9 @@
     }
 
 
-    /* HERO */
+    /* ==================================================
+       HERO
+    ================================================== */
 
     .hero {
       min-height: 620px;
@@ -207,7 +211,9 @@
     }
 
 
-    /* SERVICES */
+    /* ==================================================
+       SERVICES
+    ================================================== */
 
     .services {
       background: #f5f9ff;
@@ -247,7 +253,9 @@
     }
 
 
-    /* MISSION */
+    /* ==================================================
+       MISSION
+    ================================================== */
 
     .mission {
       background: #ffffff;
@@ -287,7 +295,9 @@
     }
 
 
-    /* COMPANY */
+    /* ==================================================
+       COMPANY
+    ================================================== */
 
     .company {
       background: #f5f9ff;
@@ -307,7 +317,10 @@
     }
 
 
-    /* MESSAGE */
+    /* ==================================================
+       MESSAGE
+       PC: COPY LEFT / PHOTO RIGHT
+    ================================================== */
 
     .message-teaser {
       background: #ffffff;
@@ -315,18 +328,13 @@
 
     .message-teaser-grid {
       display: grid;
-      grid-template-columns: 320px 1fr;
-      gap: 70px;
+      grid-template-columns: 1.15fr .85fr;
+      gap: 80px;
       align-items: center;
     }
 
-    .message-teaser-photo img {
-      width: 100%;
-      aspect-ratio: 4 / 5;
-      object-fit: cover;
-      object-position: center top;
-      border-radius: 26px;
-      box-shadow: 0 16px 45px rgba(20,70,120,.10);
+    .message-teaser-copy {
+      min-width: 0;
     }
 
     .message-teaser-copy h2 {
@@ -356,8 +364,27 @@
       line-height: 2;
     }
 
+    .message-teaser-photo {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+    }
 
-    /* NEWS */
+    .message-teaser-photo img {
+      width: 100%;
+      max-width: 420px;
+      height: auto;
+
+      object-fit: contain;
+
+      border-radius: 26px;
+      box-shadow: 0 16px 45px rgba(20,70,120,.10);
+    }
+
+
+    /* ==================================================
+       NEWS
+    ================================================== */
 
     .news {
       background: #f5f9ff;
@@ -382,7 +409,9 @@
     }
 
 
-    /* CONTACT */
+    /* ==================================================
+       CONTACT
+    ================================================== */
 
     .contact {
       padding: 95px 0;
@@ -411,7 +440,9 @@
     }
 
 
-    /* FOOTER */
+    /* ==================================================
+       FOOTER
+    ================================================== */
 
     footer {
       padding: 32px 20px;
@@ -422,7 +453,9 @@
     }
 
 
-    /* MOBILE */
+    /* ==================================================
+       MOBILE
+    ================================================== */
 
     @media(max-width: 850px) {
 
@@ -499,11 +532,16 @@
 
       .message-teaser-grid {
         grid-template-columns: 1fr;
-        gap: 34px;
+        gap: 40px;
+      }
+
+      .message-teaser-photo {
+        justify-content: flex-start;
       }
 
       .message-teaser-photo img {
-        max-width: 340px;
+        width: 100%;
+        max-width: 420px;
       }
 
       .news-item {
@@ -519,6 +557,10 @@
 <body>
 
 
+<!-- ==================================================
+     HEADER
+================================================== -->
+
 <header>
 
   <div class="container nav">
@@ -532,7 +574,9 @@
 
     <nav class="nav-links">
 
-      <a href="#top">TOP</a>
+      <a href="#top">
+        TOP
+      </a>
 
       <a href="#services">
         事業紹介
@@ -575,7 +619,9 @@
 <main>
 
 
-  <!-- HERO -->
+  <!-- ==================================================
+       HERO
+  ================================================== -->
 
   <section class="hero" id="top">
 
@@ -625,7 +671,9 @@
   </section>
 
 
-  <!-- SERVICES -->
+  <!-- ==================================================
+       SERVICES
+  ================================================== -->
 
   <section
     class="section services"
@@ -716,7 +764,9 @@
   </section>
 
 
-  <!-- MISSION -->
+  <!-- ==================================================
+       MISSION
+  ================================================== -->
 
   <section
     class="section mission"
@@ -773,7 +823,9 @@
   </section>
 
 
-  <!-- COMPANY -->
+  <!-- ==================================================
+       COMPANY
+  ================================================== -->
 
   <section
     class="section company"
@@ -819,7 +871,10 @@
   </section>
 
 
-  <!-- MESSAGE -->
+  <!-- ==================================================
+       MESSAGE
+       LEFT COPY / RIGHT PHOTO
+  ================================================== -->
 
   <section class="section message-teaser">
 
@@ -828,15 +883,7 @@
       <div class="message-teaser-grid">
 
 
-        <div class="message-teaser-photo">
-
-          <img
-            src="assets/representative.jpg"
-            alt="株式会社TEAMOS 代表取締役 南波 泰昌"
-          >
-
-        </div>
-
+        <!-- LEFT : MESSAGE COPY -->
 
         <div class="message-teaser-copy">
 
@@ -873,6 +920,18 @@
         </div>
 
 
+        <!-- RIGHT : PHOTO -->
+
+        <div class="message-teaser-photo">
+
+          <img
+            src="assets/representative.jpg"
+            alt="株式会社TEAMOS 代表取締役 南波 泰昌"
+          >
+
+        </div>
+
+
       </div>
 
     </div>
@@ -880,7 +939,9 @@
   </section>
 
 
-  <!-- NEWS -->
+  <!-- ==================================================
+       NEWS
+  ================================================== -->
 
   <section
     class="section news"
@@ -918,7 +979,9 @@
   </section>
 
 
-  <!-- CONTACT -->
+  <!-- ==================================================
+       CONTACT
+  ================================================== -->
 
   <section
     class="contact"
