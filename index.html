@@ -117,16 +117,21 @@
       position: sticky;
       top: 0;
       z-index: 100;
+
       background: rgba(255,255,255,.96);
+
       border-bottom: 1px solid #e5eaf0;
+
       backdrop-filter: blur(8px);
     }
 
     .nav {
       min-height: 86px;
+
       display: flex;
       align-items: center;
       justify-content: space-between;
+
       gap: 28px;
     }
 
@@ -137,7 +142,9 @@
     .nav-links {
       display: flex;
       align-items: center;
+
       gap: 24px;
+
       font-size: 14px;
       font-weight: 800;
     }
@@ -148,8 +155,11 @@
 
     .contact-btn {
       padding: 12px 22px;
+
       border-radius: 999px;
+
       background: #0879f9;
+
       color: #ffffff !important;
     }
 
@@ -160,6 +170,7 @@
 
     .hero {
       min-height: 620px;
+
       display: flex;
       align-items: center;
 
@@ -179,34 +190,46 @@
 
     .hero-content {
       width: min(680px, 58%);
+
       padding: 95px 0;
     }
 
     .hero-kicker {
       color: #0879f9;
+
       font-size: 14px;
       font-weight: 900;
+
       letter-spacing: .16em;
+
       margin-bottom: 18px;
     }
 
     .hero h1 {
       font-size: clamp(48px, 6vw, 76px);
+
       line-height: 1.25;
+
       letter-spacing: -.045em;
     }
 
     .hero-description {
       max-width: 620px;
+
       margin-top: 28px;
+
       color: #355271;
+
       font-size: 18px;
+
       line-height: 2;
     }
 
     .hero-actions {
       display: flex;
+
       gap: 14px;
+
       margin-top: 34px;
     }
 
@@ -221,34 +244,47 @@
 
     .service-grid {
       margin-top: 44px;
+
       display: grid;
+
       grid-template-columns: repeat(3, 1fr);
+
       gap: 22px;
     }
 
     .service-card {
       min-height: 330px;
+
       padding: 34px;
+
       border: 1px solid #dce7f3;
+
       border-radius: 20px;
+
       background: #ffffff;
+
       box-shadow: 0 8px 30px rgba(20,70,120,.05);
     }
 
     .service-no {
       color: #0879f9;
+
       font-size: 30px;
+
       font-weight: 900;
     }
 
     .service-card h3 {
       margin-top: 20px;
+
       font-size: 24px;
+
       line-height: 1.45;
     }
 
     .service-card p {
       margin-top: 18px;
+
       color: #5b6e83;
     }
 
@@ -263,29 +299,41 @@
 
     .mission-grid {
       display: grid;
+
       grid-template-columns: 1.05fr .95fr;
+
       gap: 70px;
+
       align-items: center;
     }
 
     .mission-copy h2 {
       font-size: clamp(40px, 4.7vw, 60px);
+
       line-height: 1.35;
+
       letter-spacing: -.04em;
     }
 
     .mission-copy p {
       max-width: 650px;
+
       margin-top: 26px;
+
       color: #355271;
+
       font-size: 17px;
+
       line-height: 2;
     }
 
     .mission-visual {
       overflow: hidden;
+
       border-radius: 28px;
+
       background: #f5f9ff;
+
       box-shadow: 0 14px 45px rgba(20,70,120,.07);
     }
 
@@ -305,8 +353,11 @@
 
     .company-grid {
       display: grid;
+
       grid-template-columns: .9fr 1.1fr;
+
       gap: 70px;
+
       align-items: center;
     }
 
@@ -316,8 +367,11 @@
 
     .company-info {
       margin-top: 24px;
+
       color: #52667d;
+
       font-size: 16px;
+
       line-height: 2;
     }
 
@@ -327,16 +381,24 @@
 
     .company-photo {
       position: relative;
+
       width: 100%;
+
       overflow: hidden;
+
       border-radius: 26px;
+
       background: #eaf2fb;
-      box-shadow: 0 16px 45px rgba(20,70,120,.10);
+
+      box-shadow:
+        0 16px 45px rgba(20,70,120,.10);
     }
 
     .company-photo img {
       width: 100%;
+
       aspect-ratio: 16 / 9;
+
       object-fit: cover;
       object-position: center;
     }
@@ -352,8 +414,11 @@
 
     .message-teaser-grid {
       display: grid;
-      grid-template-columns: 1fr 240px;
-      gap: 80px;
+
+      grid-template-columns: 1fr 420px;
+
+      gap: 70px;
+
       align-items: center;
     }
 
@@ -362,40 +427,54 @@
     }
 
     .message-teaser-photo {
-      width: 240px;
+      width: 100%;
     }
 
     .message-teaser-photo img {
       width: 100%;
       height: auto;
-      border-radius: 22px;
-      box-shadow: 0 14px 40px rgba(20,70,120,.10);
+
+      border-radius: 26px;
+
+      box-shadow:
+        0 16px 45px rgba(20,70,120,.10);
     }
 
     .message-teaser-copy h2 {
       font-size: clamp(34px, 4vw, 48px);
+
       line-height: 1.4;
     }
 
     .message-name {
       margin-top: 24px;
+
       font-size: 20px;
+
       font-weight: 800;
     }
 
     .message-name span {
       display: block;
+
       margin-top: 3px;
+
       color: #64758a;
+
       font-size: 14px;
+
       font-weight: 500;
     }
 
     .message-teaser-copy p {
       max-width: 620px;
+
       margin-top: 20px;
+
       color: #52667d;
+
       font-size: 17px;
+
       line-height: 2;
     }
 
@@ -410,19 +489,25 @@
 
     .news-list {
       margin-top: 38px;
+
       border-top: 1px solid #dce5ef;
     }
 
     .news-item {
       display: grid;
+
       grid-template-columns: 150px 1fr;
+
       gap: 24px;
+
       padding: 22px 0;
+
       border-bottom: 1px solid #dce5ef;
     }
 
     .news-date {
       color: #7a899a;
+
       font-size: 14px;
     }
 
@@ -433,8 +518,11 @@
 
     .contact {
       padding: 95px 0;
+
       text-align: center;
+
       background: #062f66;
+
       color: #ffffff;
     }
 
@@ -444,16 +532,23 @@
 
     .contact p {
       margin-top: 14px;
+
       color: #c7d8ea;
     }
 
     .contact-button {
       display: inline-block;
+
       margin-top: 28px;
+
       padding: 15px 30px;
+
       border-radius: 999px;
+
       background: #ffffff;
+
       color: #062f66;
+
       font-weight: 900;
     }
 
@@ -464,9 +559,13 @@
 
     footer {
       padding: 32px 20px;
+
       text-align: center;
+
       background: #031a3b;
+
       color: #a9bdd4;
+
       font-size: 13px;
     }
 
@@ -495,6 +594,7 @@
 
       .hero {
         min-height: 760px;
+
         align-items: flex-start;
 
         background:
@@ -511,6 +611,7 @@
 
       .hero-content {
         width: 100%;
+
         padding: 60px 0 350px;
       }
 
@@ -524,6 +625,7 @@
 
       .hero-actions {
         flex-direction: column;
+
         align-items: flex-start;
       }
 
@@ -533,6 +635,7 @@
 
       .mission-grid {
         grid-template-columns: 1fr;
+
         gap: 40px;
       }
 
@@ -546,6 +649,7 @@
 
       .company-grid {
         grid-template-columns: 1fr;
+
         gap: 36px;
       }
 
@@ -559,11 +663,12 @@
 
       .message-teaser-grid {
         grid-template-columns: 1fr;
+
         gap: 34px;
       }
 
       .message-teaser-photo {
-        width: 210px;
+        width: 100%;
       }
 
       .message-teaser-photo img {
@@ -573,8 +678,10 @@
 
       .news-item {
         grid-template-columns: 1fr;
+
         gap: 6px;
       }
+
     }
 
   </style>
@@ -589,15 +696,20 @@
   <div class="container nav">
 
     <a href="#top" class="logo">
+
       <img
         src="assets/teamos-logo.png"
         alt="TEAMOS"
       >
+
     </a>
+
 
     <nav class="nav-links">
 
-      <a href="#top">TOP</a>
+      <a href="#top">
+        TOP
+      </a>
 
       <a href="#services">
         事業紹介
@@ -640,9 +752,14 @@
 <main>
 
 
-  <!-- HERO -->
+  <!-- ==================================================
+       HERO
+  ================================================== -->
 
-  <section class="hero" id="top">
+  <section
+    class="hero"
+    id="top"
+  >
 
     <div class="container">
 
@@ -690,7 +807,9 @@
   </section>
 
 
-  <!-- SERVICES -->
+  <!-- ==================================================
+       SERVICES
+  ================================================== -->
 
   <section
     class="section services"
@@ -781,7 +900,9 @@
   </section>
 
 
-  <!-- MISSION -->
+  <!-- ==================================================
+       MISSION
+  ================================================== -->
 
   <section
     class="section mission"
@@ -791,6 +912,7 @@
     <div class="container">
 
       <div class="mission-grid">
+
 
         <div class="mission-copy">
 
@@ -829,6 +951,7 @@
 
         </div>
 
+
       </div>
 
     </div>
@@ -836,7 +959,9 @@
   </section>
 
 
-  <!-- COMPANY -->
+  <!-- ==================================================
+       COMPANY
+  ================================================== -->
 
   <section
     class="section company"
@@ -846,6 +971,7 @@
     <div class="container">
 
       <div class="company-grid">
+
 
         <div class="company-copy">
 
@@ -858,10 +984,16 @@
           </h2>
 
           <div class="company-info">
+
             株式会社TEAMOS<br>
+
             代表取締役　南波 泰昌<br>
+
             2027年4月1日創業<br>
-            東京都墨田区錦糸1-2-1 アルカセントラル14F
+
+            東京都墨田区錦糸1-2-1
+            アルカセントラル14F
+
           </div>
 
           <a
@@ -883,6 +1015,7 @@
 
         </div>
 
+
       </div>
 
     </div>
@@ -890,7 +1023,9 @@
   </section>
 
 
-  <!-- MESSAGE -->
+  <!-- ==================================================
+       MESSAGE
+  ================================================== -->
 
   <section class="section message-teaser">
 
@@ -912,11 +1047,13 @@
           </h2>
 
           <div class="message-name">
+
             代表取締役　南波 泰昌
 
             <span>
               Namba Hiromasa
             </span>
+
           </div>
 
           <p>
@@ -955,7 +1092,9 @@
   </section>
 
 
-  <!-- NEWS -->
+  <!-- ==================================================
+       NEWS
+  ================================================== -->
 
   <section
     class="section news"
@@ -993,7 +1132,9 @@
   </section>
 
 
-  <!-- CONTACT -->
+  <!-- ==================================================
+       CONTACT
+  ================================================== -->
 
   <section
     class="contact"
@@ -1032,4 +1173,5 @@
 
 
 </body>
+
 </html>
