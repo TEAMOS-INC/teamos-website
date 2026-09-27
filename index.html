@@ -352,9 +352,13 @@
 
     .message-teaser-grid {
       display: grid;
-      grid-template-columns: 240px 1fr;
+      grid-template-columns: 1fr 240px;
       gap: 80px;
       align-items: center;
+    }
+
+    .message-teaser-copy {
+      min-width: 0;
     }
 
     .message-teaser-photo {
@@ -894,15 +898,8 @@
 
       <div class="message-teaser-grid">
 
-        <div class="message-teaser-photo">
 
-          <img
-            src="assets/representative.jpg"
-            alt="株式会社TEAMOS 代表取締役 南波 泰昌"
-          >
-
-        </div>
-
+        <!-- LEFT : MESSAGE -->
 
         <div class="message-teaser-copy">
 
@@ -937,6 +934,19 @@
           </a>
 
         </div>
+
+
+        <!-- RIGHT : PHOTO -->
+
+        <div class="message-teaser-photo">
+
+          <img
+            src="assets/representative.jpg"
+            alt="株式会社TEAMOS 代表取締役 南波 泰昌"
+          >
+
+        </div>
+
 
       </div>
 
