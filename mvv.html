@@ -109,13 +109,13 @@
 
 
     /* ==================================================
-       PHILOSOPHY HERO
+       CONCEPT
     ================================================== */
 
-    .mvv-hero {
+    .concept-section {
       position: relative;
 
-      padding: 105px 24px 110px;
+      padding: 120px 24px 100px;
 
       overflow: hidden;
 
@@ -124,88 +124,17 @@
       background:
         radial-gradient(
           circle at 50% 0%,
-          rgba(8,121,249,.16) 0%,
-          rgba(8,121,249,.06) 28%,
+          rgba(8,121,249,.14) 0%,
+          rgba(8,121,249,.05) 30%,
           rgba(255,255,255,0) 62%
         ),
         #ffffff;
-
-      border-bottom: 1px solid #edf2f7;
-    }
-
-    .mvv-hero::after {
-      content: "";
-
-      position: absolute;
-
-      left: 50%;
-      bottom: -230px;
-
-      width: 700px;
-      height: 420px;
-
-      transform: translateX(-50%);
-
-      border-radius: 50%;
-
-      background: rgba(8,121,249,.035);
-
-      pointer-events: none;
-    }
-
-    .mvv-hero-inner {
-      position: relative;
-      z-index: 1;
-
-      max-width: 980px;
-      margin: 0 auto;
-    }
-
-    .hero-eyebrow {
-      color: #0879f9;
-
-      font-size: 14px;
-      font-weight: 900;
-      letter-spacing: .18em;
-    }
-
-    .hero-title {
-      margin-top: 18px;
-
-      color: #062b63;
-
-      font-size: clamp(42px, 5vw, 64px);
-      line-height: 1.25;
-
-      font-weight: 900;
-      letter-spacing: -.03em;
-    }
-
-    .hero-lead {
-      max-width: 760px;
-
-      margin: 32px auto 0;
-
-      color: #52667d;
-
-      font-size: 18px;
-      line-height: 2.1;
-    }
-
-
-    /* ==================================================
-       CONCEPT
-    ================================================== */
-
-    .concept-section {
-      padding: 100px 24px 95px;
-
-      text-align: center;
-
-      background: #ffffff;
     }
 
     .concept-inner {
+      position: relative;
+      z-index: 1;
+
       max-width: 1100px;
       margin: 0 auto;
     }
@@ -225,7 +154,7 @@
 
       color: #0b2c5f;
 
-      font-size: clamp(42px, 5vw, 68px);
+      font-size: clamp(46px, 5.5vw, 72px);
       line-height: 1.15;
 
       font-weight: 800;
@@ -236,7 +165,7 @@
     .concept-description {
       max-width: 850px;
 
-      margin: 36px auto 0;
+      margin: 40px auto 0;
 
       color: #52667d;
 
@@ -541,33 +470,8 @@
         display: none;
       }
 
-      .mvv-hero {
-        padding: 72px 20px 78px;
-      }
-
-      .hero-eyebrow {
-        font-size: 12px;
-      }
-
-      .hero-title {
-        margin-top: 14px;
-
-        font-size: clamp(34px, 10vw, 48px);
-      }
-
-      .hero-lead {
-        margin-top: 26px;
-
-        font-size: 15px;
-        line-height: 2;
-      }
-
-      .hero-lead br {
-        display: none;
-      }
-
       .concept-section {
-        padding: 72px 20px 65px;
+        padding: 78px 20px 70px;
       }
 
       .concept-label {
@@ -695,33 +599,6 @@
 
 
 <!-- ==================================================
-     PHILOSOPHY HERO
-================================================== -->
-
-<section class="mvv-hero">
-
-  <div class="mvv-hero-inner">
-
-    <div class="hero-eyebrow">
-      OUR PHILOSOPHY
-    </div>
-
-    <div class="hero-title">
-      MISSION / VISION / VALUE
-    </div>
-
-    <p class="hero-lead">
-      私たちは、何のために存在し、<br>
-      どんな未来を目指し、どのように行動するのか。
-    </p>
-
-  </div>
-
-</section>
-
-
-
-<!-- ==================================================
      CONCEPT
 ================================================== -->
 
@@ -733,9 +610,9 @@
       CONCEPT
     </div>
 
-    <h2 class="concept-title">
+    <h1 class="concept-title">
       TEAMOS = TEAM × OS
-    </h2>
+    </h1>
 
     <p class="concept-description">
       TEAMOS（ティーモス）は、
