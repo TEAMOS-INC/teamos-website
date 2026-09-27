@@ -224,6 +224,74 @@
 
 
     /* ==================================================
+       PROFILE BIO
+    ================================================== */
+
+    .profile-bio {
+      margin-top: 36px;
+      padding-top: 28px;
+
+      border-top: 1px solid #dce6f0;
+    }
+
+    .profile-bio-label {
+      color: #0879f9;
+
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: .14em;
+    }
+
+    .profile-bio h3 {
+      margin-top: 5px;
+
+      font-size: 22px;
+      line-height: 1.5;
+    }
+
+    .profile-bio-list {
+      margin-top: 20px;
+
+      list-style: none;
+    }
+
+    .profile-bio-list li {
+      position: relative;
+
+      padding: 0 0 18px 18px;
+
+      color: #52667d;
+
+      font-size: 14px;
+      line-height: 1.8;
+    }
+
+    .profile-bio-list li::before {
+      content: "";
+
+      position: absolute;
+      left: 0;
+      top: .75em;
+
+      width: 6px;
+      height: 6px;
+
+      border-radius: 50%;
+
+      background: #0879f9;
+    }
+
+    .profile-bio-list strong {
+      display: block;
+
+      color: #0b2c5f;
+
+      font-size: 15px;
+      font-weight: 800;
+    }
+
+
+    /* ==================================================
        MESSAGE COPY
     ================================================== */
 
@@ -269,56 +337,6 @@
       font-size: 22px;
       font-weight: 800;
       line-height: 1.7;
-    }
-
-
-    /* ==================================================
-       CAREER
-    ================================================== */
-
-    .career {
-      padding: 100px 0;
-
-      background: #f5f9ff;
-    }
-
-    .career h2 {
-      font-size: 38px;
-    }
-
-    .career-list {
-      margin-top: 42px;
-    }
-
-    .career-item {
-      display: grid;
-      grid-template-columns: 110px 1fr;
-
-      gap: 28px;
-
-      padding: 28px 0;
-
-      border-bottom: 1px solid #dce6f0;
-    }
-
-    .career-no {
-      color: #0879f9;
-
-      font-size: 26px;
-      font-weight: 900;
-    }
-
-    .career-item h3 {
-      font-size: 23px;
-      line-height: 1.45;
-    }
-
-    .career-item p {
-      margin-top: 10px;
-
-      color: #52667d;
-
-      line-height: 1.9;
     }
 
 
@@ -441,22 +459,26 @@
         margin: 0 auto;
       }
 
+      .profile-name {
+        max-width: 520px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 24px;
+      }
+
+      .profile-bio {
+        max-width: 520px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 36px;
+      }
+
       .message-copy p {
         font-size: 16px;
       }
 
       .message-highlight p {
         font-size: 19px;
-      }
-
-      .career {
-        padding: 75px 0;
-      }
-
-      .career-item {
-        grid-template-columns: 1fr;
-
-        gap: 8px;
       }
 
       .closing {
@@ -605,6 +627,57 @@
 
           </div>
 
+
+          <!-- PROFILE BIO -->
+
+          <div class="profile-bio">
+
+            <div class="profile-bio-label">
+              PROFILE
+            </div>
+
+            <h3>
+              略歴
+            </h3>
+
+            <ul class="profile-bio-list">
+
+              <li>
+                <strong>野村総合研究所（NRI）</strong>
+                証券フロント・バックシステム、
+                共同利用型プラットフォームの開発に携わる。
+              </li>
+
+              <li>
+                <strong>ソフトバンク株式会社</strong>
+                COO直轄組織にて事業開発、
+                先端技術研究、
+                IoTコンサルティング事業にも携わる。
+              </li>
+
+              <li>
+                <strong>丸紅株式会社・社内ベンチャー</strong>
+                蓄電池卸売ベンチャーの創業に携わり、
+                代表取締役社長を務める。
+              </li>
+
+              <li>
+                <strong>SES企業 取締役</strong>
+                AI推進事業をけん引し、
+                AI時代の事業構造改革に従事。
+              </li>
+
+              <li>
+                <strong>株式会社TEAMOS</strong>
+                チーム組成を軸に、
+                経営・組織コンサルティング事業を展開する
+                株式会社TEAMOSを創業。
+              </li>
+
+            </ul>
+
+          </div>
+
         </div>
 
       </div>
@@ -713,150 +786,6 @@
         </p>
 
       </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-
-<!-- ==================================================
-     CAREER
-================================================== -->
-
-<section class="career">
-
-  <div class="container">
-
-    <div class="section-label">
-      CAREER
-    </div>
-
-    <h2>
-      経歴
-    </h2>
-
-
-    <div class="career-list">
-
-
-      <div class="career-item">
-
-        <div class="career-no">
-          01
-        </div>
-
-        <div>
-
-          <h3>
-            野村総合研究所（NRI）
-          </h3>
-
-          <p>
-            証券フロント・バックシステム、
-            共同利用型プラットフォームの開発に携わる。
-          </p>
-
-        </div>
-
-      </div>
-
-
-
-      <div class="career-item">
-
-        <div class="career-no">
-          02
-        </div>
-
-        <div>
-
-          <h3>
-            ソフトバンク株式会社
-          </h3>
-
-          <p>
-            COO直轄組織にて事業開発、
-            先端技術研究、
-            IoTコンサルティング事業にも携わる。
-          </p>
-
-        </div>
-
-      </div>
-
-
-
-      <div class="career-item">
-
-        <div class="career-no">
-          03
-        </div>
-
-        <div>
-
-          <h3>
-            丸紅株式会社・社内ベンチャー
-          </h3>
-
-          <p>
-            蓄電池卸売ベンチャーの創業に携わり、
-            代表取締役社長を務める。
-          </p>
-
-        </div>
-
-      </div>
-
-
-
-      <div class="career-item">
-
-        <div class="career-no">
-          04
-        </div>
-
-        <div>
-
-          <h3>
-            SES企業 取締役
-          </h3>
-
-          <p>
-            AI推進事業をけん引し、
-            AI時代の事業構造改革に従事。
-          </p>
-
-        </div>
-
-      </div>
-
-
-
-      <div class="career-item">
-
-        <div class="career-no">
-          05
-        </div>
-
-        <div>
-
-          <h3>
-            株式会社TEAMOS
-          </h3>
-
-          <p>
-            チーム組成を軸に、
-            経営・組織コンサルティング事業を展開する
-            株式会社TEAMOSを創業。
-          </p>
-
-        </div>
-
-      </div>
-
 
     </div>
 
