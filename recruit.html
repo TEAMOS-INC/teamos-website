@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>採用情報｜TEAMOS（ティーモス）</title>
+  <meta name="description" content="TEAMOS（ティーモス）の採用情報。仕事ではなく、経験を選ぼう。経営・組織・AIを横断し、人とAIが協働する時代の新しい組織をともにつくる仲間を募集しています。">
+
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans JP", "Yu Gothic", sans-serif;
+      color: #0b2c5f;
+      background: #ffffff;
+      line-height: 1.8;
+    }
+    a { color: inherit; text-decoration: none; }
+    img { display: block; max-width: 100%; }
+    .container { width: min(1180px, 92%); margin: 0 auto; }
+    .section { padding: 105px 0; }
+    .section-label {
+      color: #0879f9;
+      font-size: 13px;
+      font-weight: 900;
+      letter-spacing: .16em;
+      margin-bottom: 10px;
+    }
+    .section-title {
+      font-size: clamp(34px, 4vw, 50px);
+      line-height: 1.35;
+      letter-spacing: -.03em;
+    }
+    .section-lead {
+      max-width: 780px;
+      margin-top: 18px;
+      color: #52667d;
+      font-size: 17px;
+    }
+    .primary-btn {
+      display: inline-block;
+      padding: 14px 24px;
+      border-radius: 999px;
+      background: #0879f9;
+      color: #ffffff;
+      font-weight: 800;
+    }
+
+    /* HEADER */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(255,255,255,.96);
+      border-bottom: 1px solid #e5eaf0;
+      backdrop-filter: blur(8px);
+    }
+    .nav {
+      min-height: 86px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 28px;
+    }
+    .logo img { width: 220px; }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      font-size: 14px;
+      font-weight: 800;
+    }
+    .nav-links a:hover { color: #0879f9; }
+    .contact-btn {
+      padding: 12px 22px;
+      border-radius: 999px;
+      background: #0879f9;
+      color: #ffffff !important;
+    }
+
+    /* HERO */
+    .recruit-hero {
+      padding: 125px 0 115px;
+      background:
+        radial-gradient(circle at 88% 20%, rgba(8,121,249,.14), transparent 28%),
+        linear-gradient(135deg, #ffffff 0%, #f4f9ff 100%);
+      border-bottom: 1px solid #e4edf7;
+    }
+    .recruit-kicker {
+      color: #0879f9;
+      font-size: 14px;
+      font-weight: 900;
+      letter-spacing: .18em;
+      margin-bottom: 20px;
+    }
+    .recruit-hero h1 {
+      font-size: clamp(48px, 7vw, 82px);
+      line-height: 1.22;
+      letter-spacing: -.05em;
+    }
+    .recruit-hero .statement {
+      margin-top: 32px;
+      font-size: clamp(23px, 2.6vw, 34px);
+      font-weight: 900;
+      line-height: 1.6;
+    }
+    .recruit-hero .statement span { color: #0879f9; }
+    .recruit-hero p {
+      max-width: 760px;
+      margin-top: 24px;
+      color: #52667d;
+      font-size: 18px;
+      line-height: 2;
+    }
+
+    /* MESSAGE */
+    .message { background: #ffffff; }
+    .message-box {
+      margin-top: 40px;
+      padding: 48px;
+      border-radius: 24px;
+      background: #f5f9ff;
+      border: 1px solid #dce7f3;
+    }
+    .message-box h3 {
+      font-size: clamp(26px, 3vw, 38px);
+      line-height: 1.5;
+    }
+    .message-box p {
+      max-width: 850px;
+      margin-top: 22px;
+      color: #52667d;
+      font-size: 17px;
+      line-height: 2;
+    }
+
+    /* PEOPLE */
+    .people { background: #f5f9ff; }
+    .people-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+      margin-top: 42px;
+    }
+    .people-item {
+      padding: 28px 30px;
+      border-radius: 18px;
+      background: #ffffff;
+      border: 1px solid #dce7f3;
+      font-size: 17px;
+      font-weight: 800;
+    }
+    .people-item::before {
+      content: "→";
+      color: #0879f9;
+      margin-right: 12px;
+    }
+
+    /* CAREER */
+    .career { background: #ffffff; }
+    .career-flow {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 12px;
+      margin-top: 48px;
+      align-items: stretch;
+    }
+    .career-step {
+      position: relative;
+      min-height: 150px;
+      padding: 25px 18px;
+      border-radius: 18px;
+      background: #f5f9ff;
+      border: 1px solid #dce7f3;
+    }
+    .career-step:not(:last-child)::after {
+      content: "→";
+      position: absolute;
+      right: -13px;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 2;
+      width: 26px;
+      text-align: center;
+      color: #0879f9;
+      font-size: 20px;
+      font-weight: 900;
+    }
+    .career-step small {
+      color: #0879f9;
+      font-weight: 900;
+      letter-spacing: .08em;
+    }
+    .career-step h3 {
+      margin-top: 10px;
+      font-size: 20px;
+      line-height: 1.4;
+    }
+    .career-quote {
+      margin-top: 46px;
+      padding: 42px;
+      border-radius: 24px;
+      background: #062f66;
+      color: #ffffff;
+      font-size: clamp(26px, 3vw, 38px);
+      font-weight: 900;
+      line-height: 1.6;
+      text-align: center;
+    }
+    .career-quote span { color: #7fc0ff; }
+
+    /* EXPERIENCE */
+    .experience { background: #f5f9ff; }
+    .experience-flow {
+      margin-top: 44px;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 14px;
+    }
+    .experience-item {
+      padding: 30px 20px;
+      min-height: 130px;
+      border-radius: 18px;
+      background: #ffffff;
+      border: 1px solid #dce7f3;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-weight: 900;
+      font-size: 17px;
+    }
+
+    /* POSITIONS */
+    .positions { background: #ffffff; }
+    .position-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+      margin-top: 44px;
+    }
+    .position-card {
+      padding: 34px;
+      border-radius: 20px;
+      border: 1px solid #dce7f3;
+      box-shadow: 0 8px 30px rgba(20,70,120,.05);
+    }
+    .position-card .no {
+      color: #0879f9;
+      font-size: 14px;
+      font-weight: 900;
+      letter-spacing: .12em;
+    }
+    .position-card h3 {
+      margin-top: 12px;
+      font-size: 23px;
+      line-height: 1.45;
+    }
+    .position-card p {
+      margin-top: 16px;
+      color: #52667d;
+    }
+    .position-note {
+      margin-top: 30px;
+      color: #52667d;
+      font-size: 15px;
+    }
+
+    /* CONTACT */
+    .contact {
+      padding: 95px 0;
+      text-align: center;
+      background: #062f66;
+      color: #ffffff;
+    }
+    .contact h2 { font-size: clamp(32px, 4vw, 46px); }
+    .contact p { margin-top: 14px; color: #c7d8ea; }
+    .contact-button {
+      display: inline-block;
+      margin-top: 28px;
+      padding: 15px 30px;
+      border-radius: 999px;
+      background: #ffffff;
+      color: #062f66;
+      font-weight: 900;
+    }
+
+    footer {
+      padding: 32px 20px;
+      text-align: center;
+      background: #031a3b;
+      color: #a9bdd4;
+      font-size: 13px;
+    }
+
+    @media(max-width: 850px) {
+      .section { padding: 72px 0; }
+      .nav { min-height: 72px; }
+      .logo img { width: 170px; }
+      .nav-links { display: none; }
+      .recruit-hero { padding: 78px 0 72px; }
+      .recruit-hero h1 { font-size: 44px; }
+      .message-box { padding: 30px; }
+      .people-grid { grid-template-columns: 1fr; }
+      .career-flow,
+      .experience-flow,
+      .position-grid { grid-template-columns: 1fr; }
+      .career-step:not(:last-child)::after { display: none; }
+      .career-step { min-height: auto; }
+      .career-quote { padding: 30px 22px; }
+    }
+  </style>
+</head>
+
+<body>
+<header>
+  <div class="container nav">
+    <a href="index.html#top" class="logo">
+      <img src="assets/teamos-logo.png" alt="TEAMOS">
+    </a>
+    <nav class="nav-links">
+      <a href="index.html#top">TOP</a>
+      <a href="index.html#services">事業紹介</a>
+      <a href="mvv.html">ミッション</a>
+      <a href="company.html">会社紹介</a>
+      <a href="message.html">代表挨拶</a>
+      <a href="index.html#news">ニュース</a>
+      <a href="recruit.html">採用情報</a>
+      <a href="#contact" class="contact-btn">お問い合わせ →</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="recruit-hero">
+    <div class="container">
+      <div class="recruit-kicker">RECRUIT</div>
+      <h1>仕事ではなく、<br>経験を選ぼう。</h1>
+      <div class="statement">
+        AIで知識は圧縮できる。<br>
+        <span>経験は、圧縮できない。</span>
+      </div>
+      <p>
+        TEAMOSは、経営・組織・テクノロジーを横断し、
+        人とAIが協働する時代の新しい組織のあり方をつくる会社です。
+        完成した役割に人を当てはめるのではなく、一人ひとりの経験を設計し、
+        顧客とともに価値を生み出すチームをつくります。
+      </p>
+    </div>
+  </section>
+
+  <section class="section message">
+    <div class="container">
+      <div class="section-label">MESSAGE</div>
+      <h2 class="section-title">完成した会社に入るのではなく、<br>会社を一緒につくる。</h2>
+      <div class="message-box">
+        <h3>役割の境界を越え、<br>自分の仕事そのものを広げていく。</h3>
+        <p>
+          TEAMOSが求めているのは、決められた役割をこなす人ではありません。
+          顧客を知り、課題を見つけ、必要なら営業も、コンサルティングも、
+          プロダクトづくりも行う。経営・組織・AIを横断しながら、
+          自らの経験と市場価値を広げていく。そんな仲間とTEAMOSをつくっていきたいと考えています。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section people">
+    <div class="container">
+      <div class="section-label">WHO WE ARE LOOKING FOR</div>
+      <h2 class="section-title">こんな人と働きたい</h2>
+      <div class="people-grid">
+        <div class="people-item">コンサルだけ、営業だけ、エンジニアだけで終わりたくない</div>
+        <div class="people-item">顧客の課題から仕事をつくれる</div>
+        <div class="people-item">AIを「ツール」ではなく仕事の再設計に使いたい</div>
+        <div class="people-item">事業・組織・テクノロジーを横断したい</div>
+        <div class="people-item">現場と経営、両方の景色を見たい</div>
+        <div class="people-item">将来、事業責任者・経営者を目指したい</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section career">
+    <div class="container">
+      <div class="section-label">CAREER DESIGN</div>
+      <h2 class="section-title">キャリアを、一本道にしない。</h2>
+      <p class="section-lead">
+        職種に閉じるのではなく、顧客価値を起点に経験領域を広げていく。
+        TEAMOSでは、プロジェクトを通じて次の役割へ進むキャリアを設計します。
+      </p>
+
+      <div class="career-flow">
+        <div class="career-step">
+          <small>STEP 01</small>
+          <h3>Consultant</h3>
+        </div>
+        <div class="career-step">
+          <small>STEP 02</small>
+          <h3>FDE</h3>
+        </div>
+        <div class="career-step">
+          <small>STEP 03</small>
+          <h3>BizDev / Product</h3>
+        </div>
+        <div class="career-step">
+          <small>STEP 04</small>
+          <h3>Manager</h3>
+        </div>
+        <div class="career-step">
+          <small>STEP 05</small>
+          <h3>Business Leader / Entrepreneur</h3>
+        </div>
+      </div>
+
+      <div class="career-quote">
+        <span>AIで知識は圧縮できる。</span><br>
+        経験は、圧縮できない。
+      </div>
+    </div>
+  </section>
+
+  <section class="section experience">
+    <div class="container">
+      <div class="section-label">EXPERIENCE</div>
+      <h2 class="section-title">TEAMOSで得られる経験</h2>
+      <p class="section-lead">
+        「何を担当したか」ではなく、「どこまで価値創出に関わったか」。
+        経営から実装まで、一連のプロセスを経験できる環境をつくります。
+      </p>
+
+      <div class="experience-flow">
+        <div class="experience-item">経営者と<br>仕事する</div>
+        <div class="experience-item">課題を<br>定義する</div>
+        <div class="experience-item">組織を<br>設計する</div>
+        <div class="experience-item">AIで<br>実装する</div>
+        <div class="experience-item">事業を<br>つくる</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section positions">
+    <div class="container">
+      <div class="section-label">OPEN POSITIONS</div>
+      <h2 class="section-title">募集ポジション</h2>
+      <p class="section-lead">
+        創業期のため、職種の境界を固定しすぎず、
+        経験・強み・目指すキャリアに応じて役割を一緒に設計します。
+      </p>
+
+      <div class="position-grid">
+        <article class="position-card">
+          <div class="no">POSITION 01</div>
+          <h3>若手コンサルタント</h3>
+          <p>
+            経営・組織・AIプロジェクトに横断的に参画。
+            顧客課題の整理からプロジェクト推進、実装支援まで経験します。
+          </p>
+        </article>
+
+        <article class="position-card">
+          <div class="no">POSITION 02</div>
+          <h3>シニアコンサルタント<br>／マネージャー</h3>
+          <p>
+            顧客の変革プロジェクトをリードし、
+            経営と現場をつなぎながら成果創出まで伴走します。
+          </p>
+        </article>
+
+        <article class="position-card">
+          <div class="no">POSITION 03</div>
+          <h3>学生インターン</h3>
+          <p>
+            AI・マーケティング・プロダクト開発・社内DXなど、
+            実際の事業づくりに参加します。
+          </p>
+        </article>
+      </div>
+
+      <p class="position-note">
+        ※ 現在、創業メンバー・業務委託・インターンを中心に募集しています。
+      </p>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2>まずは、話してみませんか。</h2>
+      <p>
+        TEAMOSの考え方や仕事に興味を持っていただいた方からのご連絡をお待ちしています。
+      </p>
+      <a href="#" class="contact-button">採用について問い合わせる →</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  © 2027 TEAMOS Inc. All Rights Reserved.
+</footer>
+</body>
+</html>
