@@ -1,0 +1,1283 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>TEAMOS（ティーモス）｜経営・組織・AI事業開発支援</title>
+<meta content="株式会社TEAMOS（ティーモス）は、経営・事業戦略、組織設計・制度設計、営業組織改革、AIを活用した事業開発を支援するトランスフォーメーションファームです。" name="description"/>
+<style>
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        "Noto Sans JP",
+        "Yu Gothic",
+        sans-serif;
+
+      color: #0b2c5f;
+      background: #ffffff;
+      line-height: 1.8;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    .container {
+      width: min(1180px, 92%);
+      margin: 0 auto;
+    }
+
+    .section {
+      padding: 105px 0;
+    }
+
+    .section-label {
+      color: #0879f9;
+      font-size: 13px;
+      font-weight: 900;
+      letter-spacing: .16em;
+      margin-bottom: 10px;
+    }
+
+    .section-title {
+      font-size: clamp(34px, 4vw, 50px);
+      line-height: 1.35;
+      letter-spacing: -.03em;
+    }
+
+    .section-lead {
+      max-width: 760px;
+      margin-top: 18px;
+      color: #52667d;
+      font-size: 17px;
+    }
+
+    .text-link {
+      display: inline-block;
+      margin-top: 28px;
+      color: #0879f9;
+      font-weight: 900;
+    }
+
+    .primary-btn,
+    .secondary-btn {
+      display: inline-block;
+      padding: 14px 24px;
+      border-radius: 999px;
+      font-weight: 800;
+    }
+
+    .primary-btn {
+      background: #0879f9;
+      color: #ffffff;
+    }
+
+    .secondary-btn {
+      border: 1px solid #cfdcea;
+      background: #ffffff;
+      color: #0b2c5f;
+    }
+
+
+    /* ==================================================
+       HEADER
+    ================================================== */
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(255,255,255,.96);
+      border-bottom: 1px solid #e5eaf0;
+      backdrop-filter: blur(8px);
+    }
+
+    .nav {
+      min-height: 86px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 28px;
+    }
+
+    .logo img {
+      width: 220px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      font-size: 14px;
+      font-weight: 800;
+    }
+
+    .nav-links a:hover {
+      color: #0879f9;
+    }
+
+    .contact-btn {
+      padding: 12px 22px;
+      border-radius: 999px;
+      background: #0879f9;
+      color: #ffffff !important;
+    }
+
+
+    /* ==================================================
+       HERO
+    ================================================== */
+
+    .hero {
+      min-height: 620px;
+      display: flex;
+      align-items: center;
+
+      background:
+        linear-gradient(
+          90deg,
+          rgba(255,255,255,.98) 0%,
+          rgba(255,255,255,.92) 29%,
+          rgba(255,255,255,.48) 43%,
+          rgba(255,255,255,.08) 56%,
+          rgba(255,255,255,0) 64%
+        ),
+        url("assets/hero.png") right center / auto 100% no-repeat;
+
+      background-color: #f5f9ff;
+    }
+
+    .hero-content {
+      width: min(680px, 58%);
+      padding: 95px 0;
+    }
+
+    .hero-kicker {
+      color: #0879f9;
+      font-size: 14px;
+      font-weight: 900;
+      letter-spacing: .16em;
+      margin-bottom: 18px;
+    }
+
+    .hero h1 {
+      font-size: clamp(48px, 6vw, 76px);
+      line-height: 1.25;
+      letter-spacing: -.045em;
+    }
+
+    .hero-description {
+      max-width: 620px;
+      margin-top: 28px;
+      color: #355271;
+      font-size: 18px;
+      line-height: 2;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 14px;
+      margin-top: 34px;
+    }
+
+
+
+
+    /* ==================================================
+       SECOND FOUNDING
+    ================================================== */
+
+    .second-founding {
+      padding: 76px 0 88px;
+      background: #ffffff;
+    }
+
+    .second-founding-head {
+      margin-bottom: 30px;
+    }
+
+    .second-founding-subtitle {
+      margin-top: 14px;
+      max-width: 760px;
+      color: #526b84;
+      font-size: 17px;
+      line-height: 1.9;
+    }
+
+    .second-founding-visual {
+      display: block;
+      width: 100%;
+      margin: 0 auto;
+      overflow: hidden;
+      border-radius: 24px;
+      border: 1px solid #e1eaf3;
+      background: #ffffff;
+      box-shadow: 0 14px 42px rgba(20,70,120,.08);
+    }
+
+    .second-founding-visual img {
+      display: block;
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+
+    .second-founding-link {
+      display: inline-block;
+      margin-top: 18px;
+      color: #0879f9;
+      font-weight: 800;
+      text-decoration: none;
+    }
+
+    .second-founding-link:hover {
+      text-decoration: underline;
+    }
+
+
+    /* ==================================================
+       SERVICES
+    ================================================== */
+
+    .services {
+      background: #f5f9ff;
+    }
+
+    .service-grid {
+      margin-top: 44px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .service-card {
+      min-height: 330px;
+      padding: 34px;
+      border: 1px solid #dce7f3;
+      border-radius: 20px;
+      background: #ffffff;
+      box-shadow: 0 8px 30px rgba(20,70,120,.05);
+    }
+
+    .service-no {
+      color: #0879f9;
+      font-size: 30px;
+      font-weight: 900;
+    }
+
+    .service-card h3 {
+      margin-top: 20px;
+      font-size: 24px;
+      line-height: 1.45;
+    }
+
+    .service-card p {
+      margin-top: 18px;
+      color: #5b6e83;
+    }
+
+    .service-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 22px;
+    }
+
+    .service-tag {
+      display: inline-flex;
+      align-items: center;
+      min-height: 32px;
+      padding: 5px 13px;
+      border-radius: 999px;
+      background: #edf5ff;
+      color: #16477b;
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 1.3;
+    }
+
+    .service-image {
+      border-radius: 14px;
+      width: 100%;
+      height: 190px;
+      margin-top: 24px;
+      object-fit: cover;
+    }
+
+
+    /* ==================================================
+       MISSION
+    ================================================== */
+
+    .mission {
+      background: #ffffff;
+    }
+
+    .mission-grid {
+      display: grid;
+      grid-template-columns: 1.05fr .95fr;
+      gap: 70px;
+      align-items: center;
+    }
+
+    .mission-copy h2 {
+      font-size: clamp(40px, 4.7vw, 60px);
+      line-height: 1.35;
+      letter-spacing: -.04em;
+    }
+
+    .mission-copy p {
+      max-width: 650px;
+      margin-top: 26px;
+      color: #355271;
+      font-size: 17px;
+      line-height: 2;
+    }
+
+    .mission-visual {
+      overflow: hidden;
+      border-radius: 28px;
+      background: #f5f9ff;
+      box-shadow: 0 14px 45px rgba(20,70,120,.07);
+    }
+
+    .mission-visual img {
+      width: 100%;
+      height: auto;
+    }
+
+
+    /* ==================================================
+       COMPANY
+    ================================================== */
+
+    .company {
+      background: #f5f9ff;
+    }
+
+    .company-grid {
+      display: grid;
+      grid-template-columns: .9fr 1.1fr;
+      gap: 70px;
+      align-items: center;
+    }
+
+    .company-copy {
+      min-width: 0;
+    }
+
+    .company-info {
+      margin-top: 24px;
+      color: #52667d;
+      font-size: 16px;
+      line-height: 2;
+    }
+
+    .company-copy .primary-btn {
+      margin-top: 30px;
+    }
+
+    .company-photo {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      border-radius: 26px;
+      background: #eaf2fb;
+      box-shadow: 0 16px 45px rgba(20,70,120,.10);
+    }
+
+    .company-photo img {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      object-position: center;
+    }
+
+
+    /* ==================================================
+       MESSAGE
+    ================================================== */
+
+    .message-teaser {
+      background: #ffffff;
+    }
+
+    .message-teaser-grid {
+      display: grid;
+      grid-template-columns: 1fr 420px;
+      gap: 70px;
+      align-items: center;
+    }
+
+    .message-teaser-copy {
+      min-width: 0;
+    }
+
+    .message-teaser-photo {
+      width: 100%;
+    }
+
+    .message-teaser-photo img {
+      width: 100%;
+      height: auto;
+      border-radius: 26px;
+      box-shadow: 0 16px 45px rgba(20,70,120,.10);
+    }
+
+    .message-teaser-copy h2 {
+      font-size: clamp(34px, 4vw, 48px);
+      line-height: 1.4;
+    }
+
+    .message-name {
+      margin-top: 24px;
+      font-size: 20px;
+      font-weight: 800;
+    }
+
+    .message-name span {
+      display: block;
+      margin-top: 3px;
+      color: #64758a;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .message-teaser-copy p {
+      max-width: 620px;
+      margin-top: 20px;
+      color: #52667d;
+      font-size: 17px;
+      line-height: 2;
+    }
+
+
+    /* ==================================================
+       NEWS
+    ================================================== */
+
+    .news {
+      background: #f5f9ff;
+    }
+
+    .news-list {
+      margin-top: 38px;
+      border-top: 1px solid #dce5ef;
+    }
+
+    .news-item {
+      display: grid;
+      grid-template-columns: 150px 1fr;
+      gap: 24px;
+      padding: 22px 0;
+      border-bottom: 1px solid #dce5ef;
+    }
+
+    .news-date {
+      color: #7a899a;
+      font-size: 14px;
+    }
+
+
+    /* ==================================================
+       CONTACT
+    ================================================== */
+
+    .contact {
+      padding: 95px 0;
+      text-align: center;
+      background: #062f66;
+      color: #ffffff;
+    }
+
+    .contact h2 {
+      font-size: clamp(32px, 4vw, 46px);
+    }
+
+    .contact p {
+      margin-top: 14px;
+      color: #c7d8ea;
+    }
+
+    .contact-button {
+      display: inline-block;
+      margin-top: 28px;
+      padding: 15px 30px;
+      border-radius: 999px;
+      background: #ffffff;
+      color: #062f66;
+      font-weight: 900;
+    }
+
+
+    /* ==================================================
+       FOOTER
+    ================================================== */
+
+    footer {
+      padding: 32px 20px;
+      text-align: center;
+      background: #031a3b;
+      color: #a9bdd4;
+      font-size: 13px;
+    }
+
+
+    /* Mobile menu button */
+    .menu-toggle {
+      display: none;
+      width: 44px;
+      height: 44px;
+      border: 0;
+      background: transparent;
+      cursor: pointer;
+      position: relative;
+      z-index: 120;
+    }
+
+    .menu-toggle span {
+      position: absolute;
+      left: 8px;
+      width: 28px;
+      height: 2px;
+      background: #0b2c5f;
+      border-radius: 2px;
+      transition: .25s ease;
+    }
+
+    .menu-toggle span:nth-child(1) { top: 13px; }
+    .menu-toggle span:nth-child(2) { top: 21px; }
+    .menu-toggle span:nth-child(3) { top: 29px; }
+
+    .menu-toggle.is-open span:nth-child(1) {
+      top: 21px;
+      transform: rotate(45deg);
+    }
+    .menu-toggle.is-open span:nth-child(2) { opacity: 0; }
+    .menu-toggle.is-open span:nth-child(3) {
+      top: 21px;
+      transform: rotate(-45deg);
+    }
+
+    /* ==================================================
+       MOBILE
+    ================================================== */
+
+    @media(max-width: 850px) {
+
+      .section {
+        padding: 72px 0;
+      }
+
+      .nav {
+        min-height: 72px;
+      }
+
+      .logo img {
+        width: 170px;
+      }
+
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 72px;
+        left: 0;
+        right: 0;
+        padding: 18px 4% 26px;
+        background: rgba(255,255,255,.98);
+        border-bottom: 1px solid #e5eaf0;
+        box-shadow: 0 12px 30px rgba(20,70,120,.10);
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+      }
+
+      .nav-links.is-open {
+        display: flex;
+      }
+
+      .nav-links a {
+        display: block;
+        padding: 14px 4px;
+        border-bottom: 1px solid #edf1f5;
+      }
+
+      .nav-links .contact-btn {
+        margin-top: 12px;
+        padding: 13px 20px;
+        text-align: center;
+        border-bottom: 0;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+
+      .hero {
+        /* スマホは写真をバナーではなく、ファーストビュー全面の背景として使う */
+        min-height: calc(100svh - 72px);
+        display: flex;
+        align-items: stretch;
+        background:
+          linear-gradient(
+            180deg,
+            rgba(255,255,255,.90) 0%,
+            rgba(255,255,255,.75) 32%,
+            rgba(255,255,255,.45) 55%,
+            rgba(255,255,255,.05) 78%,
+            rgba(255,255,255,0) 100%
+          ),
+          url("assets/hero.png") 58% center / auto 95% no-repeat;
+      }
+
+      .hero .container {
+        width: 100%;
+        display: flex;
+      }
+
+      .hero-content {
+        width: 100%;
+        padding: 42px 0 34vh;
+        position: relative;
+        z-index: 1;
+      }
+
+      .hero h1 {
+        font-size: 42px;
+      }
+
+      .hero-description {
+        font-size: 16px;
+      }
+
+      .hero-actions {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+
+
+      .second-founding {
+        padding: 54px 0 62px;
+      }
+
+      .second-founding-head {
+        margin-bottom: 22px;
+      }
+
+      .second-founding-visual {
+        max-width: 100%;
+        border-radius: 16px;
+      }
+
+      .second-founding-visual img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+      }
+
+
+      .service-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+      }
+
+      .service-card {
+        padding: 28px;
+      }
+
+      .service-image {
+        height: 210px;
+        aspect-ratio: 16 / 9;
+      }
+
+      .mission-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .mission-copy h2 {
+        font-size: 38px;
+      }
+
+      .mission-copy p {
+        font-size: 16px;
+      }
+
+      .company-grid {
+        grid-template-columns: 1fr;
+        gap: 36px;
+      }
+
+      .company-photo {
+        border-radius: 20px;
+      }
+
+      .company-photo img {
+        aspect-ratio: 16 / 10;
+      }
+
+      .message-teaser-grid {
+        grid-template-columns: 1fr;
+        gap: 34px;
+      }
+
+      .message-teaser-photo {
+        width: 100%;
+      }
+
+      .message-teaser-photo img {
+        width: 100%;
+        height: auto;
+      }
+
+      .news-item {
+        grid-template-columns: 1fr;
+        gap: 6px;
+      }
+    }
+
+  
+    /* Second founding: responsive editorial layout */
+    .founding-title {font-size:clamp(28px,3.6vw,48px);line-height:1.45;letter-spacing:-.035em;overflow-wrap:normal;word-break:keep-all;}
+    .founding-mobile-break {display:none;}
+    .founding-grid-heading {margin:36px 0 20px;color:#0b2d60;font-size:clamp(19px,2vw,25px);}
+    .founding-grid {display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-bottom:26px;}
+    .founding-card {padding:24px 20px;border:1px solid #dce7f3;border-radius:18px;background:#f7faff;min-width:0;}
+    .founding-card span {font-size:11px;letter-spacing:.08em;font-weight:800;color:#0879f9;}
+    .founding-card h4 {font-size:23px;color:#0b2d60;margin:14px 0 10px;}
+    .founding-card p {font-size:14px;line-height:1.8;color:#526981;margin:0;}
+    @media(max-width:900px){.founding-grid{grid-template-columns:repeat(2,minmax(0,1fr));}}
+    @media(max-width:600px){.founding-title{font-size:clamp(27px,7vw,36px);line-height:1.5;}.founding-mobile-break{display:block;}.founding-grid{grid-template-columns:1fr;gap:12px;}.founding-card{padding:20px;}.founding-grid-heading{margin-top:30px;}}
+
+
+    /* Innovation framework / engagement approach */
+    .innovation-framework { background:#ffffff; }
+    .innovation-visual { width:100%; height:auto; margin-top:36px; border-radius:18px; }
+    .engagement-approach { background:#f5f9ff; }
+    .approach-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:22px; margin-top:40px; }
+    .approach-card { padding:30px; border:1px solid #dce7f3; border-radius:20px; background:#ffffff; }
+    .approach-card span { color:#0879f9; font-size:12px; font-weight:900; letter-spacing:.1em; }
+    .approach-card h3 { margin-top:15px; font-size:22px; }
+    .approach-card p { margin-top:12px; color:#52667d; }
+    .approach-conclusion { margin-top:28px; font-weight:800; }
+    @media(max-width:850px) { .approach-grid { grid-template-columns:1fr; gap:16px; } .approach-card { padding:24px; } }
+  
+    /* Layout refinement — preserve original sections, palette and assets */
+    @media (min-width: 851px) {
+      .section { padding: 72px 0; }
+      .hero { min-height: 530px; }
+      .hero-content { padding: 72px 0; }
+      .service-grid { margin-top: 30px; gap: 18px; }
+      .service-card { min-height: 0; padding: 24px; border-radius: 16px; }
+      .service-no { font-size: 25px; }
+      .service-card h3 { font-size: clamp(18px, 1.55vw, 21px); margin-top: 10px; line-height: 1.45; min-height: 3em; overflow-wrap: anywhere; }
+      .service-card p { margin-top: 10px; font-size: 14px; line-height: 1.75; }
+      .service-tags { margin-top: 13px; gap: 6px; }
+      .service-tag { font-size: 11px; min-height: 27px; padding: 4px 10px; }
+      .service-image { height: 126px; margin-top: 16px; object-fit: cover; }
+      .second-founding { padding: 65px 0 70px; }
+      .founding-grid { margin-top: 22px; gap: 12px; }
+      .founding-card { padding: 19px 16px; }
+      .innovation-visual { display: block; max-width: 980px; margin: 24px auto 0; }
+      .engagement-approach .innovation-visual { max-width: 900px; }
+      .mission-grid, .company-grid, .message-teaser-grid { gap: 44px; }
+      .mission-visual { max-width: 430px; justify-self: center; }
+      .message-teaser-grid { grid-template-columns: minmax(0,1fr) minmax(0,320px); }
+      .message-teaser-photo { max-width: 320px; justify-self: center; }
+      .company-grid { grid-template-columns: minmax(0,1fr) minmax(0,420px); }
+      .company-photo { max-width: 420px; justify-self: center; }
+      .contact { padding: 72px 0; }
+    }
+    @media (max-width: 850px) {
+      .section { padding: 56px 0; }
+      .hero { min-height: 76svh; }
+      .hero-content { padding-top: 38px; padding-bottom: 22vh; }
+      .service-grid { margin-top: 24px; gap: 14px; }
+      .service-card { min-height: 0; padding: 22px; }
+      .service-card h3 { font-size: 21px; margin-top: 10px; }
+      .service-card p { margin-top: 10px; font-size: 14px; }
+      .service-tags { margin-top: 12px; gap: 6px; }
+      .service-tag { min-height: 27px; padding: 4px 10px; font-size: 11px; }
+      .service-image { height: 132px; margin-top: 14px; }
+      .second-founding { padding: 50px 0 55px; }
+      .innovation-visual { display: block; width: 100%; height: auto; margin: 22px auto 0; }
+      .mission-visual { max-width: 420px; margin: auto; }
+      .message-teaser-photo { max-width: 300px; margin: auto; }
+      .company-photo { max-width: 420px; margin: auto; }
+      .contact { padding: 65px 0; }
+    }
+
+  
+    /* AI diagnostics visual assets only */
+    #ai-diagnostics .service-card {display:flex;flex-direction:column;}
+    #ai-diagnostics .ai-diagnostic-image {display:block;width:100%;height:auto;aspect-ratio: 434 / 249;object-fit:cover;margin-top:auto;padding-top:18px;border-radius:14px;}
+    #ai-diagnostics .service-card p {margin-bottom:12px;}
+
+    /* Preserve full original service illustrations and embedded lettering. */
+    #services .service-image {
+      display: block;
+      width: 100%;
+      height: auto;
+      aspect-ratio: auto;
+      object-fit: contain;
+      object-position: center;
+    }
+
+    /* Compact original services: inline numbers, no reserved title rows, smaller full images. */
+    #services .service-card { display:flex; flex-direction:column; }
+    #services .service-copy { display:contents; }
+    #services .service-no { display:inline-block; font-size:24px; line-height:1.4; margin-right:12px; vertical-align:baseline; }
+    #services .service-heading { display:flex; align-items:baseline; gap:12px; margin-bottom:12px; }
+    #services .service-heading .service-no { margin:0; flex:none; }
+    #services .service-heading h3 { margin:0; min-height:0; line-height:1.45; font-size:clamp(18px,1.55vw,21px); overflow-wrap:normal; }
+    #services .service-card p { margin-top:0; }
+    #services .service-tags { margin-top:12px; }
+    #services .service-image { width:100%; height:230px; max-height:230px; object-fit:contain; margin-top:auto; padding-top:14px; border-radius:12px; }
+    @media(max-width:850px) {
+      #services .service-heading { align-items:baseline; }
+      #services .service-heading h3 { font-size:20px; }
+      #services .service-image { height:210px; max-height:210px; }
+    }
+
+/* Shared framed-card visual hierarchy across core services and AI diagnostics. */
+#services .service-card, #ai-diagnostics .service-card {
+  display:flex; flex-direction:column;
+  padding:30px;
+  border:2px solid #bdd5f2;
+  border-top:5px solid #0879f9;
+  border-radius:20px;
+  box-shadow:0 10px 26px rgba(11,68,131,.10);
+  background:#fff;
+  min-height:0;
+}
+#services .service-heading, #ai-diagnostics .service-heading {
+  display:flex; align-items:baseline; gap:12px;
+  margin-bottom:18px; min-height:34px;
+}
+#services .service-heading .service-no, #ai-diagnostics .service-heading .service-no {
+  margin:0; font-size:26px; line-height:1.35; flex:none;
+}
+#services .service-heading h3, #ai-diagnostics .service-heading h3 {
+  margin:0; min-height:0; font-size:clamp(18px,1.45vw,22px);
+  line-height:1.45; overflow-wrap:normal;
+}
+#services .service-card p, #ai-diagnostics .service-card p { font-size:15px; line-height:1.8; }
+#services .service-tags { margin-top:14px; }
+/* Portrait imagery: readable lettering, no crop, centered. */
+#services .service-image {
+  display:block; width:auto; max-width:100%; height:285px; max-height:none;
+  object-fit:contain; object-position:center;
+  margin:20px auto 0; padding:0; border-radius:12px;
+}
+/* Dashboard previews retain their natural landscape proportions. */
+#ai-diagnostics .ai-diagnostic-image {
+  display:block; width:100%; height:auto; aspect-ratio:434 / 249;
+  object-fit:contain; margin-top:auto; padding-top:18px; border-radius:12px;
+}
+#ai-diagnostics .service-card p { margin-top:10px; margin-bottom:8px; }
+@media(max-width:850px) {
+  #services .service-card, #ai-diagnostics .service-card { padding:22px; }
+  #services .service-image { height:265px; max-height:none; }
+  #services .service-heading h3, #ai-diagnostics .service-heading h3 { font-size:20px; }
+}
+
+/* Compact AI diagnostics typography: preserve copy and image assets. */
+#ai-diagnostics .service-card { padding:24px 26px 22px; }
+#ai-diagnostics .service-heading { margin-bottom:8px; min-height:0; gap:10px; }
+#ai-diagnostics .service-heading h3 { line-height:1.35; }
+#ai-diagnostics .service-card p { margin:0 0 8px; font-size:15px; line-height:1.55; letter-spacing:0; }
+#ai-diagnostics .service-card p + p { margin-top:0; }
+#ai-diagnostics .ai-diagnostic-image { padding-top:8px; }
+@media(max-width:850px) { #ai-diagnostics .service-card {padding:20px;} }
+/* Full-width portrait photos in the three core-service cards; no cropping. */
+#services .service-image {
+  display:block;
+  width:100%;
+  max-width:100%;
+  height:auto;
+  max-height:none;
+  object-fit:contain;
+  object-position:center;
+  margin:18px 0 0;
+  padding:0;
+  border-radius:12px;
+}
+@media (max-width:850px) {
+  #services .service-image {width:100%; height:auto; max-height:none;}
+}
+</style>
+<style>
+/* Duplicate image headlines removed: concise framework presentation */
+#innovation-framework .section-label, #approach .section-label { margin-bottom: 18px; }
+#innovation-framework .innovation-visual, #approach .innovation-visual { display:block; margin-top:0; }
+@media(max-width:767px) {
+ #innovation-framework .section-label, #approach .section-label { margin-bottom: 12px; }
+}
+</style><style>
+/* TEAMOS LAB: compact brand / research presentation */
+.teamos-lab .lab-process-image { display:block; width:100%; height:auto; margin:30px auto 0; border-radius:14px; }
+@media(max-width:767px) { .teamos-lab .lab-process-image { margin-top:20px; } }
+.teamos-lab { padding-top: 56px; padding-bottom: 56px; background: #f7f9fa; }
+.teamos-lab .section-lead { margin-bottom: 12px; }
+.teamos-lab .lab-note { max-width: 800px; margin: 0; color: #68747d; font-size: 14px; line-height: 1.85; }
+/* Original diagrams already contain their own headings and explanation */
+#innovation-framework .innovation-visual, #approach .innovation-visual { margin-top: 10px; }
+</style><style>
+/* AI diagnostics heading: intentional phrase breaks */
+.diagnostics-heading span { display: block; }
+@media (max-width: 768px) { .diagnostics-heading { font-size: clamp(24px, 5vw, 36px); line-height: 1.4; } }
+</style>
+</head>
+<body>
+<header>
+<div class="container nav">
+<a class="logo" href="#top">
+<img alt="TEAMOS" src="assets/teamos-logo.png"/>
+</a>
+<nav class="nav-links" id="global-menu">
+<a href="#top">TOP</a>
+<a href="#services">
+        事業紹介
+      </a>
+<a href="mvv.html">
+        ミッション
+      </a>
+<a href="#message">
+        代表挨拶
+      </a>
+<a href="#company">会社概要</a>
+<a href="#news">
+        ニュース
+      </a>
+<a href="recruit.html">
+        採用情報
+      </a>
+<a class="contact-btn" href="#contact">
+        お問い合わせ →
+      </a>
+</nav>
+<button aria-controls="global-menu" aria-expanded="false" aria-label="メニューを開く" class="menu-toggle" type="button">
+<span></span>
+<span></span>
+<span></span>
+</button>
+</div>
+</header>
+<main>
+<!-- HERO -->
+<section class="hero" id="top">
+<div class="container">
+<div class="hero-content">
+<div class="hero-kicker">
+          PEOPLE × FORMATION × TECHNOLOGY
+        </div>
+<h1>
+          人とAIのチカラで、<br/>
+          組織の可能性を、<br/>
+          解き放つ。
+        </h1>
+<p class="hero-description">
+          株式会社TEAMOS（ティーモス）は、
+          経営・組織・テクノロジーを横断し、
+          企業の変革と持続的な成長を支援する
+          トランスフォーメーションファームです。
+        </p>
+<div class="hero-actions">
+<a class="primary-btn" href="#services">
+            事業紹介を見る →
+          </a>
+<a class="secondary-btn" href="#contact">
+            お問い合わせ
+          </a>
+</div>
+</div>
+</div>
+</section>
+<!-- SERVICES -->
+<section class="section services" id="services">
+<div class="container">
+<div class="section-label">
+        OUR SERVICES
+      </div>
+<h2 class="section-title">
+        事業紹介
+      </h2>
+<p class="section-lead">
+        クライアントの戦略を描くだけではなく、経営チーム・執行組織・業務オペレーションを設計し、実行まで伴走します。
+      </p>
+<div class="service-grid">
+<article class="service-card">
+<div class="service-copy">
+<div class="service-heading"><div class="service-no">
+            01
+          </div><h3>AX戦略コンサルティング</h3></div>
+<p>市場・事業・組織・業務の課題を構造化し、新規事業開発・事業戦略・AX/DX変革のロードマップを設計。構想から実行まで伴走します。</p>
+<div aria-label="対応領域" class="service-tags"><span class="service-tag">AX/DX変革</span><span class="service-tag">新規事業開発</span><span class="service-tag">事業戦略策定</span><span class="service-tag">事業ロードマップ策定</span></div>
+</div>
+<img alt="経営・事業戦略のイメージ" class="service-image" src="assets/service-01.jpg"/>
+</article>
+<article class="service-card">
+<div class="service-copy">
+<div class="service-heading"><div class="service-no">
+            02
+          </div><h3>経営会議ファシリテーション</h3></div>
+<p>経営課題を可視化し、論点整理と意思決定を支援。経営チームが戦略を実行できる会議体と推進体制をつくります。</p>
+<div aria-label="対応領域" class="service-tags"><span class="service-tag">経営課題の構造化</span><span class="service-tag">意思決定支援</span><span class="service-tag">経営会議設計</span><span class="service-tag">実行状況の可視化</span></div>
+</div>
+<img alt="組織設計・制度設計のイメージ" class="service-image" src="assets/service-02.jpg"/>
+</article>
+<article class="service-card">
+<div class="service-copy">
+<div class="service-heading"><div class="service-no">
+            03
+          </div><h3>COO代行・次世代リーダー育成</h3></div>
+<p>経営と現場をつなぎ、変革施策を推進。経営実務の伴走を通じて、次世代リーダーが自走できる組織を育てます。</p>
+<div aria-label="対応領域" class="service-tags"><span class="service-tag">COO代行</span><span class="service-tag">事業推進</span><span class="service-tag">権限委譲</span><span class="service-tag">次世代リーダー育成</span></div>
+</div>
+<img alt="AI未来ラボ・事業開発支援のイメージ" class="service-image" src="assets/service-03.jpg"/>
+</article>
+</div>
+</div>
+</section>
+<!-- AI DIAGNOSTICS: added section; existing content unchanged -->
+<section class="section services" id="ai-diagnostics">
+<div class="container">
+<div class="section-label">TEAMOS AI DIAGNOSTICS</div>
+<h2 class="section-title diagnostics-heading"><span>事業部門が変われない。</span><span>経営が決められない。</span><span>部門間が繋がらない。</span></h2>
+<p class="section-lead">経営・組織の変革を阻む課題を、AIを活用した診断で可視化します。診断結果を起点に、変革の実行まで伴走します。</p>
+<div class="service-grid">
+<article class="service-card">
+<div class="service-heading"><div class="service-no">01</div><h3>AXトランスフォーム深度AI</h3></div>
+<p><strong>御社のAI活用、本当に成果につながっていますか？</strong></p>
+<p>戦略・業務・技術・組織・成果に加え、情報セキュリティ対策やAIガバナンス体制を横断的に評価し、AI活用の変革深度と成果への接続を診断します。</p>
+<img alt="AI診断ダッシュボードのイメージ（コンセプト画像）" class="ai-diagnostic-image" loading="lazy" src="assets/ai-diagnostic-01.png"/>
+</article>
+<article class="service-card">
+<div class="service-heading"><div class="service-no">02</div><h3>経営会議硬直化診断AI</h3></div>
+<p><strong>その経営会議、報告会になっていませんか？</strong></p>
+<p>許諾を得た会議記録などをもとに、議論・意思決定・実行フォローの停滞を診断します。</p>
+<img alt="AI診断ダッシュボードのイメージ（コンセプト画像）" class="ai-diagnostic-image" loading="lazy" src="assets/ai-diagnostic-02.png"/>
+</article>
+<article class="service-card">
+<div class="service-heading"><div class="service-no">03</div><h3>組織横串診断AI</h3></div>
+<p><strong>部門の壁が、会社の成長を止めていませんか？</strong></p>
+<p>部門間の連携・情報共有・協働の実態を可視化し、組織横断の阻害要因を診断します。</p>
+<img alt="AI診断ダッシュボードのイメージ（コンセプト画像）" class="ai-diagnostic-image" loading="lazy" src="assets/ai-diagnostic-03.png"/>
+</article>
+</div>
+<p class="section-lead" style="font-size:14px">※ 診断は専門家による分析とAI活用を組み合わせて提供します。分析対象データは適切な許諾のもとで取り扱います。</p>
+<a class="text-link" href="#contact">AI診断について相談する →</a>
+</div>
+</section><section class="section teamos-lab" id="teamos-lab"><div class="container"><div class="section-label">TEAMOS LAB</div><h2 class="section-title">研究・実証から、事業化へ。</h2><p class="section-lead">AI・テクノロジーの研究、PoC、事業化検証を通じて、企業の新たな可能性を探求します。</p><p class="lab-note">TEAMOS LABは独立したサービスではなく、技術力と事業創造力を磨き、未来の変革につなげる研究・実証活動です。</p><img class="lab-process-image" src="assets/teamos-lab-process.png" alt="TEAMOS LABのプロセス：課題発見、仮説構築、研究・PoC、実証・改善、事業化。検証結果を次の課題発見に還元する循環" loading="lazy"/></div></section>
+<!-- SECOND FOUNDING -->
+<section class="second-founding" id="second-founding">
+<div class="container">
+<div class="second-founding-head">
+<div class="section-label">SECOND FOUNDING · 第二創業期変革支援</div>
+<h2 class="section-title founding-title">成熟から、再成長へ。<br/>組織の停滞を解きほぐし、<br class="founding-mobile-break"/>次の成長を動かす。</h2>
+<p class="second-founding-subtitle">企業の現在地を見極め、次の成長曲線を描く。<br/>TEAMOSは、経営の意思決定から組織変革、事業の実行まで伴走します。</p>
+</div>
+<a aria-label="第二創業期の継承・立ち上げコンサルティングを見る" class="second-founding-visual" href="second-founding.html">
+<img alt="第二創業期変革支援" src="assets/second-founding-support.png"/>
+</a>
+<h3 class="founding-grid-heading">再成長を実現する4つの変革領域</h3>
+<div class="founding-grid">
+<article class="founding-card"><span>01 / MANAGEMENT</span><h4>経営変革</h4><p>MVVの再定義・経営意思決定・COO代行</p></article>
+<article class="founding-card"><span>02 / BUSINESS</span><h4>事業変革</h4><p>マーケティング戦略・新規事業・事業承継</p></article>
+<article class="founding-card"><span>03 / ORGANIZATION</span><h4>組織変革</h4><p>組織設計・権限委譲・次世代リーダー育成</p></article>
+<article class="founding-card"><span>04 / AI TRANSFORMATION</span><h4>AI変革</h4><p>AX戦略・FDE・AIエージェントによる業務変革</p></article>
+</div>
+<a class="second-founding-link" href="second-founding.html">第二創業期変革支援について詳しく見る →</a>
+</div>
+</section>
+<!-- INNOVATION FRAMEWORK -->
+<section class="section innovation-framework" id="innovation-framework">
+<div class="container">
+<div class="section-label">TRANSFORM METHOD</div>
+
+
+<img alt="TEAMOS トランスフォームメソッド：AX・マーケティング・セールス・DXの統合と4段階の変革プロセス" class="innovation-visual" src="assets/transform-method-original.png"/>
+</div>
+</section>
+<!-- ENGAGEMENT APPROACH -->
+<section class="section engagement-approach" id="approach">
+<div class="container">
+<div class="section-label">OUR APPROACH</div>
+
+
+<img alt="TEAMOSの伴走アプローチ。カウンセリング、コンサルティング、経験環境提供支援、コーチングを通じて経営チームと共にビジョンへ向かう登山ロードマップ。" class="innovation-visual" loading="lazy" src="assets/climbing_roadmap.png"/>
+<p class="approach-conclusion">目指すのは、支援がなくても変革を続けられる組織です。</p>
+</div>
+</section>
+<!-- MISSION -->
+<section class="section mission" id="mission">
+<div class="container">
+<div class="mission-grid">
+<div class="mission-copy">
+<div class="section-label">
+            OUR MISSION
+          </div>
+<h2>
+            人とAIのチカラで、<br/>
+            組織の可能性を、解き放つ。
+          </h2>
+<p>
+            人とAIの強みを掛け合わせ、
+            最適なチームを設計する。<br/>
+            TEAMOSは、戦略から実行まで伴走し、
+            組織の持続的な成長を支援します。
+          </p>
+<a class="text-link" href="mvv.html">
+            ミッション・ビジョンを見る →
+          </a>
+</div>
+<div class="mission-visual">
+<img alt="TEAMOSのミッション" src="assets/teamos-mvv.png"/>
+</div>
+</div>
+</div>
+</section>
+<!-- MESSAGE -->
+<section class="section message-teaser" id="message">
+<div class="container">
+<div class="message-teaser-grid">
+<!-- LEFT : MESSAGE -->
+<div class="message-teaser-copy">
+<div class="section-label">
+            MESSAGE
+          </div>
+<h2>
+            人を知り、状況を読み、<br/>
+            チームをつくる。
+          </h2>
+<div class="message-name">
+            代表取締役　南波 泰昌
+
+            <span>
+              Namba Hiromasa
+            </span>
+</div>
+<p>大企業での事業開発、ベンチャーの創業・経営、ITエンジニアとしての実践。異なる立場で培った経験を掛け合わせ、市場・事業・組織・テクノロジーをつなぎ、変革の実行に伴走します。</p>
+<a class="text-link" href="message.html">
+            代表メッセージを見る →
+          </a>
+</div>
+<!-- RIGHT : PHOTO -->
+<div class="message-teaser-photo">
+<img alt="株式会社TEAMOS 代表取締役 南波 泰昌" src="assets/representative.jpg"/>
+</div>
+</div>
+</div>
+</section>
+<!-- COMPANY -->
+<section class="section company" id="company">
+<div class="container">
+<div class="company-grid">
+<div class="company-copy">
+<div class="section-label">
+            COMPANY
+          </div>
+<h2 class="section-title">
+            会社概要
+          </h2>
+<div class="company-info">
+            株式会社TEAMOS<br/>
+            代表取締役　南波 泰昌<br/>
+            2026年11月11日創業<br/>
+            〒103-0027 東京都中央区日本橋3-2-14 新槇町ビル別館第一 2階
+          </div>
+<a class="primary-btn" href="company.html">
+            会社概要を見る →
+          </a>
+</div>
+<div class="company-photo">
+<img alt="錦糸町の街並み" src="assets/kinshicho.jpg"/>
+</div>
+</div>
+</div>
+</section>
+<!-- NEWS -->
+<section class="section news" id="news">
+<div class="container">
+<div class="section-label">
+        NEWS
+      </div>
+<h2 class="section-title">
+        ニュース
+      </h2>
+<div class="news-list">
+<div class="news-item">
+<div class="news-date">
+            2026.11.11
+          </div>
+<div>
+            株式会社TEAMOSを創業しました。
+          </div>
+</div>
+</div>
+</div>
+</section>
+<!-- CONTACT -->
+<section class="contact" id="contact">
+<div class="container">
+<h2>
+        ご相談・お問い合わせ
+      </h2>
+<p>
+        経営・組織・営業改革・事業開発・AI活用について、
+        お気軽にご相談ください。
+      </p>
+<a class="contact-button" href="#">
+        お問い合わせ →
+      </a>
+</div>
+</section>
+</main>
+<footer>
+  © 2027 TEAMOS Inc. All Rights Reserved.
+</footer>
+<script>
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navLinks = document.querySelector('.nav-links');
+
+  if (menuToggle && navLinks) {
+    menuToggle.addEventListener('click', () => {
+      const isOpen = navLinks.classList.toggle('is-open');
+      menuToggle.classList.toggle('is-open', isOpen);
+      menuToggle.setAttribute('aria-expanded', String(isOpen));
+      menuToggle.setAttribute('aria-label', isOpen ? 'メニューを閉じる' : 'メニューを開く');
+    });
+
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('is-open');
+        menuToggle.classList.remove('is-open');
+        menuToggle.setAttribute('aria-expanded', 'false');
+        menuToggle.setAttribute('aria-label', 'メニューを開く');
+      });
+    });
+  }
+</script>
+</body>
+</html>
